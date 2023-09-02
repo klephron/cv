@@ -85,6 +85,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeExperienceHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -103,24 +110,21 @@
   \vspace{-4pt}
   \color{gray}
   \item
-  Last Updated on August 12th, 2023
+  Last Updated on September 2nd, 2023
 \end{flushright}
 
 \vspace{-7pt}
 
 \begin{center}
-    \textbf{\Huge \scshape John Doe} \\ \vspace{8pt}
+    \textbf{\huge \scshape Nikita Kulakov} \\ \vspace{8pt}
     \small 
     \faIcon{github}
-    \href{https://github.com/johnDoe}{\underline{github.com/johnDoe}} $  $
-    \faIcon{code}
-    \href{https://www.johndoe.com}
-    {\underline{johndoe.com}} $  $
+    \href{https://github.com/zubrailx}{\underline{github.com/zubrailx}} $  $
     \faIcon{linkedin}
-    \href{https://linkedin.com/in/johndoe}{\underline{linkedin.com/in/johndoe}} $  $
+    \href{https://www.linkedin.com/in/nikita-kulakov-8a21b7203/}{\underline{linkedin.com/in/nikita-kulakov}} $  $
     \faIcon{envelope}
-    \href{mailto:johndoe@gmail.com}
-    {\underline{johndoe@gmail.com}}
+    \href{mailto:nv1kulakov@gmail.com}
+    {\underline{nv1kulakov@gmail.com}}
 \end{center}
 
 % -------------------- EDUCATION --------------------
@@ -128,18 +132,12 @@
   \resumeSubHeadingListStart
   
     \resumeSubheading
-      {Cool University}{June 2026}
-      {Bachelor of Science in Computer Science}{Current GPA: 4.0/4.0}
+      {University ITMO}{June 2024}
+      {Bachelor of Informatics and Computer Engineering}{Current GPA: 4.95/5.00}
       
-    \resumeSubheading
-      {Boring High School \footnotesize{(Dual Enrollment at Maple Community College)}}{June 2022}
-      {}{GPA: 4.44/4.0}
-
-    \vspace{-10pt}
     \subsection{Relevant Coursework}
-      \textbf{Grades:} Exclusively A’s and AP Scores of 5/5 on all listed, completed courses\\
-      \textbf{Courses:} AP Computer Science A, Intro to Programming, Object-Oriented Programming, Data Structures (in progress), Embedded Systems, Logic Design (in progress), AP Calculus BC (and AP Calculus AB Subscore), Calculus III, Calculus IV, Discrete Mathematics, Linear Algebra, AP Statistics, Probability and Statistics I (in progress), AP Physics 1, AP Physics C: Mechanics, Principles of Engineering\\
-      \textbf{Awards:} Dean's Honor List (at Cool University, for the fall, winter, and spring quarters each), 2x AP Scholar with Distinction Awards, World Language History Award (for Spanish)
+      \textbf{Grades:} Exclusively A's, completed courses\\
+      \textbf{Courses:} Functional Programming in Haskell (Part I, II), Mathematic Logic, Computer Vision, Image Processing, Machine Learning and Data Analysis, Applied Statistics, Embedded Systems, Digital Circuitry\\
 
   \resumeSubHeadingListEnd
 
@@ -148,14 +146,9 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
     
-     \textbf{Languages}{: C/C++, Java, Python, JavaScript/TypeScript, HTML/CSS, \LaTeX} \\
+     \textbf{Languages}{: C/C++, Python, Haskell, Java, Lua, Golang, Rust, Verilog, AMD64 Assembly, JavaScript, SQL, HTML/CSS, \LaTeX} \\
      
-     \textbf{Tools}{: Git/GitHub, Unix Shell, Node.js, Webpack, VS Code, IntelliJ IDEA, Atom}
-     
-     % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     
-     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
-     
+     \textbf{Tools}{: Git/GitHub, Bash/Zsh, Makefile, CMake, Conan, Flex, Bison, gRPC, Protobuf, Node.js, PostgreSQL, MongoDB, Docker, CI/CD, Screen/Tmux, Vim, VS Code}
     }}
  \end{itemize}
 % -------------------- PROJECTS --------------------
@@ -163,26 +156,21 @@
     \resumeSubHeadingListStart
     
         \resumeProjectHeading
-        {\textbf{ChatBuzz} $|$ \footnotesize\emph{TypeScript, HTML/CSS, Node.js, Webpack, Twitch API, Git, Unix Shell, VS Code}}{May 2023 -- Present}
+        {\textbf{IoT World Simulation} $|$ \footnotesize\emph{C++, CMake, Conan, Python, gRPC, GTest, Protobuf, Bash, Docker, Git}}{May 2023}
         \resumeItemListStart
-            \resumeItem{Developed a full-stack web application for Twitch livestreamers to display repeated chat messages on OBS}
-            \resumeItem{Experimented with Twitch API's OAuth Access Tokens to get chat data from the given channel}
-            % \resumeItem{Used minimal API calls, the bulk of the code was self-made logic and design}
-            % \resumeItem{Chose to restart the entire project to optimize runtime and experience}
-            \resumeItem{Collaborated with livestreamers to get feedback and suggested features}
-            \resumeItem{Solved problems relating to asynchronous tasks}
-            % \resumeItem{Optimized UX (User Experience) e.g. bought a simple domain name, made documentation, recorded a setup \& demo video, customization through URL arguments}
-            % \resumeItem{Published to GitHub and obsproject.com}
+            \resumeItem{...}
         \resumeItemListEnd
           
         \resumeProjectHeading
-        {\textbf{FoodDropper} $|$ \footnotesize\emph{Java, Maven, Spigot API, Git, IntelliJ IDEA}}{August 2022}
+        {\textbf{Academic Relational DB} $|$ \footnotesize\emph{C/C++, Bison, Flex, Boost, gRPC, GTest, Protobuf, Cmake, Bash, Git}}{January 2023}
         \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to limit players to one way of replenishing their hunger bar}
-            % \resumeItem{Created intended behavior by making logic complying to the extensive Spigot API in Java}
-            \resumeItem{Used persistent data containers to save and load data, ensuring that it persists across plugin resets}
-            \resumeItem{Optimized UX (User Experience) e.g. prioritized sound design, timing of food drops, supplied saturation level, and had to address many potential workarounds in the numerous ways of destroying the food dropper}
-            % \resumeItem{Published to GitHub and spigotmc.org}
+            \resumeItem{...}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{ALU CPU} $|$ \footnotesize\emph{Python, Coverage, Mypy, Pylint, CI/CD, Bash, Git}}{December 2022}
+        \resumeItemListStart
+            \resumeItem{...}
         \resumeItemListEnd
           
     \resumeSubHeadingListEnd
@@ -191,30 +179,18 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-        \resumeProjectHeading
-          {\textbf{CS Club} $|$ \footnotesize\emph{Member}\vspace{8pt}}{Present}
-          {\small{Cool University club centered around Computer Science topics}}
+        \resumeExperienceHeading
+          {\textbf{Tinkoff Invest Robot Contest} $|$ \footnotesize\emph{Frontend Developer}}{May 2022}
+        \resumeItemListStart
+            \resumeItem{...}
+        \resumeItemListEnd
 
-        \resumeProjectHeading
-          {\textbf{Professional Tutoring}\vspace{8pt} $|$ \footnotesize\emph{Tutor}}{2019 -- Present}
-          \small{Self-explanatory...}
+        \resumeExperienceHeading
+          {\textbf{Ovision Hack Dev Track} $|$ \footnotesize\emph{Backend Developer }}{April 2022}
+        \resumeItemListStart
+            \resumeItem{...}
+        \resumeItemListEnd
 
-        \resumeProjectHeading
-          {\textbf{Super Club} $|$ \footnotesize\emph{Founder, Manager, Member}\vspace{8pt}}{Jan. 2021 -- April 2021}
-          {\small{Learned how to fly}}
-
-        \resumeProjectHeading
-          {\textbf{Marmaduke Charity} $|$ \footnotesize\emph{Volunteer, Manager}\vspace{8pt}}{August 2018 -- Present}
-          {\small{Interacted with and helped the local community. Earned an award for philanthropic hours spent}}
-
-        \resumeProjectHeading
-          {\textbf{Playing the Oboe}\vspace{8pt} $|$ \footnotesize\emph{Clarinet Player}}{August 2013 - June 2019}
-          {\small{Played the oboe for years, even joining jazz and marching bands. Took significant time, effort, and practice}}
-
-        \resumeProjectHeading
-          {\textbf{3\textsuperscript{rd} Place Time Keeper \footnotesize{(Local Competition, Family Tradition)}}\vspace{8pt} $|$ \footnotesize\emph{Competitor}}{Feb. 2022 -- May 2022}
-          {\small{Won \$50 locally competing against high school students in keeping track of the time}}
-          
     \resumeSubHeadingListEnd 
 
 \end{document}

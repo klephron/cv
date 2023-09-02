@@ -1,1 +1,7 @@
 # resume
+
+
+
+## Technical skills
+
+

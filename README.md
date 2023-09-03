@@ -30,7 +30,7 @@ Courses:
 * C/C++
 * Python
 * Haskell
-* Java
+<!-- * Java -->
 * Lua
 * Golang
 * Rust
@@ -38,20 +38,20 @@ Courses:
 * AMD64 Assembly
 * JavaScript
 * SQL
-* HTML/CSS
+<!-- * HTML/CSS -->
 * LaTeX
 
 ### Tools
 
 * Git/GitHub
-* Bash/Zsh
+* Linux, Bash/Zsh
 * Makefile, CMake, Conan
 * Flex, Bison
-* gRPC, Protobuf
+* gRPC, Protobuf, REST
 * Node.js
 * PostgreSQL, MongoDB
 * Docker
-* CI/CD
+* Unit, CI/CD
 * Screen/Tmux
 * Vim, VS Code
 

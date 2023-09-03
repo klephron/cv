@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[russian,english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeExperienceHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on September 3nd, 2023
+\end{flushright}
+
+\vspace{-7pt}
+
+\begin{center}
+    \textbf{\huge \scshape Никита Кулаков} \\ \vspace{8pt}
+    \small 
+    \faIcon{phone}
+    \href{tel:79243306869}{\underline{+7 924 330 6869}} $  $
+    \faIcon{github}
+    \href{https://github.com/zubrailx}{\underline{github.com/zubrailx}} $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/nikita-kulakov-8a21b7203/}{\underline{linkedin.com/nikita-kulakov-8a21b7203}} $  $
+    \faIcon{envelope}
+    \href{mailto:nv1kulakov@gmail.com}
+    {\underline{nv1kulakov@gmail.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Образование}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Университет ИТМО}{Июнь 2024}
+      {Бакалавриат Информатики и Вычислительной Техники}{Средний балл: 4.96/5.00}
+      
+    \subsection{Соответствующая учебная работа}
+      \textbf{Оценивание:} Исключительно на отлично, завершенные курсы\\
+      \textbf{Курсы:} Функциональное программирование на языке Haskell (Часть I, II), Математическая логика, Компьютерное зрение, Обработка изображений, Машинное обучение и анализ данных, Прикладная статистика, Встроенные системы, Цифровая схемотехника\\
+
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Языки}{: C/C++, Haskell, Python, Lua, Golang, Rust, Verilog, AMD64 Assembly, JavaScript, SQL, \LaTeX} \\
+     
+     \textbf{Инструменты}{: Git/GitHub, Linux, Bash/Zsh, Makefile, CMake, Conan, Flex, Bison, gRPC, Protobuf, REST, Node.js, PostgreSQL, MongoDB, Docker, Unit, CI/CD, Screen/Tmux, Vim, VS Code, Vivado IDE}
+    }}
+ \end{itemize}
+% -------------------- PROJECTS --------------------
+\section{Проекты}
+    \resumeSubHeadingListStart
+    
+        \resumeProjectHeading
+        {\textbf{IoT World Simulation} $|$ \footnotesize\emph{C++, CMake, Conan, Python, gRPC, GTest, Protobuf, Docker, Git}}{May 2023 - June 2023}
+        \resumeItemListStart
+            \resumeItem{Simulated real world for data collection devices by realizing algorithms for lighting, temperature, air movement, obstacle-aware wireless network.}
+            \resumeItem{Implemented asynchronous multi-threaded application operation using mutexes, callbacks, and queues.}
+            \resumeItem{Created several kinds of virtual devices that can collect data from the simulation and send it to the data lake.}
+            \resumeItem{Performed exchanges between simulation and virtual devices using single calls and streams using gRPC.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Interactive Buffer LRU} $|$ \footnotesize\emph{Verilog, Vivado IDE}}{April 2023}
+        \resumeItemListStart
+            \resumeItem{Added possibility to change the program operation mode using exclusively double claps.}
+            \resumeItem{Converted data from PDM microphone interface and visualized amplitude on LED.}
+        \resumeItemListEnd
+          
+        \resumeProjectHeading
+        {\textbf{Academic Relational DB} $|$ \footnotesize\emph{C/C++, Bison, Flex, Boost, gRPC, CTest, Protobuf, Cmake, Bash, Git}}{January 2023}
+        \resumeItemListStart
+            \resumeItem{Implemented a C relational database supporting insert, delete for O(1), search for O(n) operations.}
+            \resumeItem{Added an allocator allowing to reuse free partitions in the DBMS data file.}
+            \resumeItem{Introduced selection using nested JOINs with conditional nested operators, and standardized the implementation of new conditional operators.}
+            \resumeItem{Added processing of syntax and semantic errors with description of reasons.}
+
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{ALU CPU} $|$ \footnotesize\emph{Python, Coverage, Mypy, Pylint, Pytest, CI/CD, Bash, Git}}{December 2022}
+        \resumeItemListStart
+            \resumeItem{Emulated the operation of a stack processor that fetches instructions and changes the state of register cells, memory and I/O ports.}
+            \resumeItem{Implemented the assembler translator into processor instructions in accordance with ISA.}
+            \resumeItem{Tested the correctness of the translator and processor emulator using CI/CD on GitHub and GitLab.}
+        \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- ACTIVITIES --------------------
+\section{Опыт}
+  \resumeSubHeadingListStart
+
+        \resumeExperienceHeading
+          {\textbf{Tinkoff Invest Robot Contest} $|$ \footnotesize\emph{Backend Developer, DevOps}}{May 2022}
+        \resumeItemListStart
+            \resumeItem{Developed a multi-user Java application that allows active user accounts to analyze quotes of traded stocks and buy them according to a specified algorithm at a given periodicity.}
+            \resumeItem{Implemented Spring Security to secure user data API access keys and trading logs on user account.}
+            \resumeItem{Configured Docker containers for frontend and backend deployment, added Nginx.}
+        \resumeItemListEnd
+
+        \resumeExperienceHeading
+          {\textbf{Ovision Hack Dev Track} $|$ \footnotesize\emph{Frontend Developer }}{April 2022}
+        \resumeItemListStart
+            \resumeItem{Developed a one-page JavaScript web application using React and Effector that reads an image from a user's camera and sends it to a server and visializes facial landmarks on the it.}
+            \resumeItem{Implemented cropping of the original image using JS Tensorflow to reduce network and server load.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd 
+
+% -------------------- EXPERIENCE --------------------
+
+\end{document}

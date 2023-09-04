@@ -60,6 +60,8 @@ Courses:
 
 ### IoT World Simulation
 
+https://github.com/IoT-MHWS
+
 C++, CMake, Conan, Python, gRPC, CTest, Protobuf, Bash, Docker, Git
 
 May 2023 - June 2023
@@ -71,6 +73,8 @@ May 2023 - June 2023
 
 ### Interactive Buffer LRU
 
+https://github.com/zubrailx/buffer-lru
+
 Verilog, Vivado IDE
 
 April 2023
@@ -79,6 +83,8 @@ April 2023
 * Преобразовал данные с PDM интерфейса микрофона и визуализировал амплитуду на LED.
 
 ### Academic Relational DB
+
+https://github.com/zubrailx/academic-relational-db
 
 C/C++, Bison/Flex, Boost, gRPC, Protobuf, CMake, Bash, Git
 
@@ -90,6 +96,8 @@ January 2023
 * Добавил обработку синтаксический и семантических ошибок с описанием причин.
 
 ### ALU CPU
+
+https://github.com/zubrailx/alu-cpu
 
 Python, Coverage, Mypy, Pylint, Pytest, CI/CD, Bash, Git
 
@@ -103,6 +111,8 @@ December 2022
 
 ### Tinkoff Invest Robot Contest 2022
 
+https://github.com/zubrailx/tinkoff-hack-2022
+
 Java, Spring Boot, Spring Security, Gradle, PostgreSQL, Tinkoff Invest API v2, Git
 
 May 2022
@@ -111,6 +121,8 @@ May 2022
 * Настроил Spring Security, Docker контейнеры для развертки фронтенда и бекенда, добавил Nginx.
 
 ### Ovision Hack Dev Track 2022
+
+https://github.com/zubrailx/ovision-hack-2022
 
 JavaScript, React, Effector, Tensorflow, HTML/CSS, Git
 

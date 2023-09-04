@@ -113,7 +113,7 @@
   \vspace{-4pt}
   \color{gray}
   \item
-  Last Updated on September 3nd, 2023
+  Last Updated on September 4th, 2023
 \end{flushright}
 
 \vspace{-7pt}
@@ -153,7 +153,10 @@
     
      \textbf{Языки}{: C/C++, Haskell, Python, Lua, Golang, Rust, Verilog, AMD64 Assembly, JavaScript, SQL, \LaTeX} \\
      
-     \textbf{Инструменты}{: Git/GitHub, Linux, Bash/Zsh, Makefile, CMake, Conan, Flex, Bison, gRPC, Protobuf, REST, Node.js, PostgreSQL, MongoDB, Docker, Unit, CI/CD, Screen/Tmux, Vim, VS Code, Vivado IDE}
+     \textbf{Инструменты}{: Git/GitHub, Linux, Bash/Zsh, Makefile, CMake, Conan, Flex, Bison, gRPC, Protobuf, REST, Node.js, PostgreSQL, MongoDB, Docker, Unit, CI/CD, Screen/Tmux, Vim, VS Code, Vivado IDE} \\
+
+     \textbf{Иностранные языки}{: Английский - B2}
+
     }}
  \end{itemize}
 % -------------------- PROJECTS --------------------
@@ -161,39 +164,29 @@
     \resumeSubHeadingListStart
     
         \resumeProjectHeading
-        {\textbf{IoT World Simulation} $|$ \footnotesize\emph{C++, CMake, Conan, Python, gRPC, GTest, Protobuf, Docker, Git}}{May 2023 - June 2023}
+        {\textbf{IoT World Simulation} $|$ \footnotesize\emph{C++, CMake, Conan, Python, gRPC, GTest, Protobuf, Docker, Git}}{Май 2023 - Июнь 2023}
         \resumeItemListStart
-            \resumeItem{Simulated real world for data collection devices by realizing algorithms for lighting, temperature, air movement, obstacle-aware wireless network.}
-            \resumeItem{Implemented asynchronous multi-threaded application operation using mutexes, callbacks, and queues.}
-            \resumeItem{Created several kinds of virtual devices that can collect data from the simulation and send it to the data lake.}
-            \resumeItem{Performed exchanges between simulation and virtual devices using single calls and streams using gRPC.}
+            \resumeItem{Симулировал реальных мир для устройств сбора данных, реализовав алгоритмы для освещения, температуры, движения воздуха, беспроводной сети с учетом препятствий.}
+            \resumeItem{Имплементировал асинхронную многопоточную работу приложения с помощью мьютексов, коллбеков и очередей.}
+            \resumeItem{Создал несколько видов виртуальных устройств, умеющих собирать данные с симуляции и отправлять их в озеро данных.}
+            \resumeItem{Осуществил обмен между симуляцией и виртуальными устройствами с помощью gRPC посредством одиночных вызовов и потоков.}
         \resumeItemListEnd
 
         \resumeProjectHeading
-        {\textbf{Interactive Buffer LRU} $|$ \footnotesize\emph{Verilog, Vivado IDE}}{April 2023}
+        {\textbf{Interactive Buffer LRU} $|$ \footnotesize\emph{Verilog, Vivado IDE}}{Апрель 2023}
         \resumeItemListStart
-            \resumeItem{Added possibility to change the program operation mode using exclusively double claps.}
-            \resumeItem{Converted data from PDM microphone interface and visualized amplitude on LED.}
+            \resumeItem{Добавил возможность изменения режима работы программы с помощью исключительно двойных хлопков.}
+            \resumeItem{Преобразовал данные с PDM интерфейса микрофона и визуализировал амплитуду на LED.}
         \resumeItemListEnd
           
         \resumeProjectHeading
-        {\textbf{Academic Relational DB} $|$ \footnotesize\emph{C/C++, Bison, Flex, Boost, gRPC, CTest, Protobuf, Cmake, Bash, Git}}{January 2023}
+        {\textbf{Academic Relational DB} $|$ \footnotesize\emph{C/C++, Bison, Flex, Boost, gRPC, CTest, Protobuf, Cmake, Bash, Git}}{Январь 2023}
         \resumeItemListStart
-            \resumeItem{Implemented a C relational database supporting insert, delete for O(1), search for O(n) operations.}
-            \resumeItem{Added an allocator allowing to reuse free partitions in the DBMS data file.}
-            \resumeItem{Introduced selection using nested JOINs with conditional nested operators, and standardized the implementation of new conditional operators.}
-            \resumeItem{Added processing of syntax and semantic errors with description of reasons.}
-
+            \resumeItem{Реализовал реляционную базу данных на языке C, поддерживающую операции вставки, удаления за $O(1)$, поиска за $O(n)$.}
+            \resumeItem{Добавил аллокатор, позволяющий переиспользовать свободные разделы в файле с данными СУБД.}
+            \resumeItem{Внедрил выборку с использованием вложенных JOIN с условными вложенными операторами и стандартизовал реализацию новых условных операторов.}
         \resumeItemListEnd
 
-        \resumeProjectHeading
-        {\textbf{ALU CPU} $|$ \footnotesize\emph{Python, Coverage, Mypy, Pylint, Pytest, CI/CD, Bash, Git}}{December 2022}
-        \resumeItemListStart
-            \resumeItem{Emulated the operation of a stack processor that fetches instructions and changes the state of register cells, memory and I/O ports.}
-            \resumeItem{Implemented the assembler translator into processor instructions in accordance with ISA.}
-            \resumeItem{Tested the correctness of the translator and processor emulator using CI/CD on GitHub and GitLab.}
-        \resumeItemListEnd
-          
     \resumeSubHeadingListEnd
 
 % -------------------- ACTIVITIES --------------------
@@ -201,18 +194,17 @@
   \resumeSubHeadingListStart
 
         \resumeExperienceHeading
-          {\textbf{Tinkoff Invest Robot Contest} $|$ \footnotesize\emph{Backend Developer, DevOps}}{May 2022}
+          {\textbf{Tinkoff Invest Robot Contest} $|$ \footnotesize\emph{Backend Developer, DevOps}}{Май 2022}
         \resumeItemListStart
-            \resumeItem{Developed a multi-user Java application that allows active user accounts to analyze quotes of traded stocks and buy them according to a specified algorithm at a given periodicity.}
-            \resumeItem{Implemented Spring Security to secure user data API access keys and trading logs on user account.}
-            \resumeItem{Configured Docker containers for frontend and backend deployment, added Nginx.}
+            \resumeItem{Разработал многопользовательское Java приложение, позволяющее для активных аккаунтов пользователей с заданной периодичностью осуществлять анализ котировок торгуемых бумаг и покупать их по заданному алгоритму.}
+            \resumeItem{Настроил Spring Security, Docker контейнеры для развертки фронтенда и бекенда, добавил Nginx.}
         \resumeItemListEnd
 
         \resumeExperienceHeading
-          {\textbf{Ovision Hack Dev Track} $|$ \footnotesize\emph{Frontend Developer }}{April 2022}
+          {\textbf{Ovision Hack Dev Track} $|$ \footnotesize\emph{Frontend Developer }}{Апрель 2022}
         \resumeItemListStart
-            \resumeItem{Developed a one-page JavaScript web application using React and Effector that reads an image from a user's camera and sends it to a server and visializes facial landmarks on the it.}
-            \resumeItem{Implemented cropping of the original image using JS Tensorflow to reduce network and server load.}
+            \resumeItem{Разработал одностраничное JavaScript веб-приложение с использованием React и Effector, считывающее изображение с камеры пользователя, отправляющее его на сервер и визуализирующее точки лица.}
+            \resumeItem{Реализовал кадрирование исходного изображения с помощью JS Tensorflow для снижения нагрузки на сеть и сервер.}
         \resumeItemListEnd
 
     \resumeSubHeadingListEnd 

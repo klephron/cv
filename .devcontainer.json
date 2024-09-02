@@ -1,0 +1,14 @@
+{
+  "image": "zubrailx/devcontainer-texlive-full",
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+        "installZsh": true,
+        "configureZshAsDefaultShell": true
+    },
+    "ghcr.io/duduribeiro/devcontainer-features/neovim:1.0.1": {},
+    "ghcr.io/duduribeiro/devcontainer-features/tmux:latest": {},
+    "ghcr.io/georgofenbeck/features/lazygit-linuxbinary:latest": {},
+    "ghcr.io/devcontainers-contrib/features/fzf:latest": {}
+  }
+}

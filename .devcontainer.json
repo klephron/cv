@@ -1,15 +1,21 @@
 {
-  "image": "zubrailx/devcontainer-texlive-full",
+  "build": { "dockerfile": "dockerfile" },
+  "remoteUser": "vscode",
   "features": {
     "ghcr.io/devcontainers/features/sshd:1": {},
     "ghcr.io/devcontainers/features/common-utils:2": {
         "installZsh": true,
-        "configureZshAsDefaultShell": true
+        "configureZshAsDefaultShell": true,
+        "installOhMyZsh": false,
+        "installOhMyZshConfig": false,
+        "upgradePackages": false,
+        "username": "vscode"
     },
     "ghcr.io/duduribeiro/devcontainer-features/neovim:1.0.1": {},
     "ghcr.io/duduribeiro/devcontainer-features/tmux:latest": {},
     "ghcr.io/georgofenbeck/features/lazygit-linuxbinary:latest": {},
     "ghcr.io/devcontainers-contrib/features/fzf:latest": {},
-    "ghcr.io/social-anthrax/eza-devcontainer/eza:0": {}
+    "ghcr.io/social-anthrax/eza-devcontainer/eza:0": {},
+    "ghcr.io/jungaretti/features/ripgrep:1": {}
   }
 }

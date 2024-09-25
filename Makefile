@@ -8,9 +8,9 @@ PDF_ENGINE := xelatex
 
 build: build/ru build/en
 
-build/ru: README.ru.pdf
+build/ru: cv.ru.pdf
 
-build/en: README.en.pdf
+build/en: cv.en.pdf
 
 clean:
-	rm README.ru.pdf README.en.pdf || true
+	rm cv.ru.pdf cv.en.pdf || true

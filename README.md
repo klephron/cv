@@ -1,1 +1,1 @@
-README.ru.md
+cv.ru.md

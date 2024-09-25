@@ -52,6 +52,8 @@
 - Git: Github/GitLab;
 - Makefile;
 - CMake; Conan;
+- Maven;
+- Gradle;
 - Protobuf;
 - NPM; PNPM; YARN;
 
@@ -75,6 +77,8 @@
 - VSCode;
 - VivadoIDE;
 - Intellij;
+
+### Связь
 
 - YouTrack;
 

@@ -6,8 +6,11 @@ PDF_ENGINE := xelatex
 %.pdf: %.md
 	pandoc $< -o $@ --pdf-engine=$(PDF_ENGINE) $(FONT) $(MARGINS)
 
-build: build/ru
+build: build/ru build/en
 
 build/ru: README.ru.pdf
 
 build/en: README.en.pdf
+
+clean:
+	rm README.ru.pdf README.en.pdf || true

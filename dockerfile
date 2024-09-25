@@ -17,6 +17,7 @@ RUN echo "export PATH=\"$PATH:$(echo /usr/local/texlive/*/bin/x86_64-linux)\"" >
 
 RUN apt-get -y update && apt-get -y upgrade && apt-get -y install --no-install-recommends \
   build-essential pandoc fontconfig \
+  fonts-liberation fonts-dejavu \
   && rm -rf /var/lib/apt/lists/*
 
 # For remote development

@@ -66,10 +66,12 @@
 - Nginx;
 - Ansible;
 - Terraform;
+- KVM; libvirt; VirtualBox;
 
 ### Окружение
 
 - Linux; Windows;
+- Development Containers;
 - Vim/Neovim;
 - Screen/Tmux;
 - VSCode;

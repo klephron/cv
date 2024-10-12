@@ -3,6 +3,8 @@ FONT := -V mainfont="Liberation Serif"
 MARGINS := -V geometry:margin=0.5in
 PDF_ENGINE := xelatex
 
+.DEFAULT_GOAL := build
+
 %.pdf: %.md
 	pandoc $< -o $@ --pdf-engine=$(PDF_ENGINE) $(FONT) $(MARGINS)
 

@@ -1,5 +1,7 @@
 .PHONY: install/fonts build build/ru clean/aux clean/pdf clean
 
+.DEFAULT_GOAL := build
+
 # for russian CV
 # may use proper path to mktextfm
 install/fonts:

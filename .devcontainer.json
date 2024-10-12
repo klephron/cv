@@ -4,12 +4,12 @@
   "features": {
     "ghcr.io/devcontainers/features/sshd:1": {},
     "ghcr.io/devcontainers/features/common-utils:2": {
-        "installZsh": true,
-        "configureZshAsDefaultShell": true,
-        "installOhMyZsh": false,
-        "installOhMyZshConfig": false,
-        "upgradePackages": false,
-        "username": "user"
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": false,
+      "installOhMyZshConfig": false,
+      "upgradePackages": false,
+      "username": "user"
     },
     "ghcr.io/duduribeiro/devcontainer-features/neovim:1.0.1": {},
     "ghcr.io/duduribeiro/devcontainer-features/tmux:latest": {
@@ -19,5 +19,8 @@
     "ghcr.io/devcontainers-contrib/features/fzf:latest": {},
     "ghcr.io/social-anthrax/eza-devcontainer/eza:0": {},
     "ghcr.io/jungaretti/features/ripgrep:1": {}
-  }
+  },
+  "mounts": [
+    "type=bind,source=${localEnv:HOME}/.ssh,target=/home/user/.ssh,readonly"
+  ]
 }

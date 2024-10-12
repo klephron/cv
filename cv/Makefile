@@ -1,12 +1,13 @@
 # Liberation Sans / DejaVu Sans
-FONT := -V mainfont="Liberation Serif"
-MARGINS := -V geometry:margin=0.5in
-PDF_ENGINE := xelatex
+PANDOC := pandoc
+PANDOC_PDF_ENGINE := xelatex
 
 .DEFAULT_GOAL := build
 
 %.pdf: %.md
-	pandoc $< -o $@ --pdf-engine=$(PDF_ENGINE) $(FONT) $(MARGINS)
+	pandoc $< -o $@ --pdf-engine=$(PANDOC_PDF_ENGINE) \
+	-V mainfont="Liberation Serif" -V papersize:a4 \
+	-V geometry:margin=0.75in -V geometry:bottom=0.75in -V geometry:top=0.5in
 
 build: build/ru build/en
 

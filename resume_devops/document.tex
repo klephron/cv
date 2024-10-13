@@ -17,7 +17,7 @@
       \vspace{-6pt}
 
       Дата рождения: 05.06.2003
-      \vspace{1pt}
+      \vspace{2pt}
 
       Санкт-Петербург, Россия%
       \small
@@ -52,104 +52,85 @@
 \end{table}
 \vspace{-40pt}
 %-------------------EDUCATION-------------------%
-\section{Education}
+\section{Образование}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science; GPA: 4.00}{Aug 2012 -- Dec 2013}
+      {Университет ИТМО}{Санкт-Петербург, 2026}
+      {Магистратура Системное программное обеспечение}{-}
+  
     \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics; GPA: 3.66 (9.15/10.0)}{Aug 2008 -- July 2012}
+      {Университет ИТМО}{Санкт-Петербург, 2024}
+      {Бакалавриат Информатика и вычислительная техника}{4.92/5.00}
+      
   \resumeSubHeadingListEnd
 
-
 %-------------------SKILLS-------------------%
-\section{Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
-     \hfill
-     \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-   }
- \resumeSubHeadingListEnd
+\section{Навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Языки}{: C/C++, Python, Java, JavaScript/TS, Golang, Dart, Bash, Lua, Haskell, Rust, SQL, HTML/CSS, \LaTeX} \\
+     
+     \textbf{Технологии}{: Ansible, AWS SQS, Bison, CI/CD, ClickHouse, Cloud Platform, CMake, Conan, Docker, Flex, Flutter, Git/GitHub Actions, gRPC, Hazelcast, Jenkins, Kafka, Keycloak, KVM, Linux, Makefile, MongoDB, MQTT, Node.js, Nginx, PostgreSQL, Protobuf, RabbitMQ, Redis, REST, S3, Screen/Tmux, Unit, Vim, Virtual Box, VS Code, YouTrack} \\
+
+     \textbf{Библиотеки}{: Scikit-learn, Tensorflow, MatplotLib, PyTorch, React, Solid, Spring} \\ 
+     
+     \textbf{Иностранные языки}{: Английский - B2}
+
+    }}
+ \end{itemize}
 
 
 %-------------------EXPERIENCE-------------------%
-\section{Experience}
+\section{Опыт}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 -- Present}
-      \resumeItemListStart
-        \resumeItem{TensorFlow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 -- Oct 2016}
-      \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowdsourcing platform which allowed for creating various tasks for crowdsourcing or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on Docker and AWS, standardized the Python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on coursera. Used this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
-      \resumeItemListEnd
+        \resumeExperienceHeading
+          {{\underline{\textbf{Bluster Wind}}} $|$ \footnotesize\emph{Backend Developer, DevOps}}{Октябрь 2023 - Июнь 2024}
+        \resumeItemListStart
+            \resumeItem{Спроектировал сервис на Golang управления данными о пользователях для формирования рекомендаций и предоставления аналитики опросов в приложении социальной сети.}
+            \resumeItem{Разработал модуль управления пользователями и подписками для монолитного приложения на Java Spring.}
+            \resumeItem{Настроил сервер для разработки, Keycloak, TLS, сохранение образов, сконфигурировал self-hosted runners и добавил сценарии для тестирования и запуска через GitHub Actions.}
+        \resumeItemListEnd
 
-    \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
-      \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging, portfolio optimization and price forecasting. Also created a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
-      \resumeItemListEnd
+        \resumeExperienceHeading
+          {\href{https://github.com/zubrailx/tinkoff-hack-2022}{\underline{\textbf{Tinkoff Invest Robot Contest}}} $|$ \footnotesize\emph{Backend Developer, DevOps}}{Май 2022}
+        \resumeItemListStart
+            \resumeItem{Разработал многопользовательское Java приложение, позволяющее для активных аккаунтов пользователей с заданной периодичностью осуществлять анализ котировок торгуемых бумаг и покупать их по заданному алгоритму.}
+            \resumeItem{Настроил Spring Security, Docker контейнеры для развертки фронтенда и бекенда, Nginx.}
+        \resumeItemListEnd
 
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Research and Teaching Assistant}{Jan 2012 -- Dec 2013}
-      \resumeItemListStart
-        \resumeItem{Research Assistant -- Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the Python library QSTK.}
-        \resumeItem{Teaching Assistant -- Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
-      \resumeItemListEnd
+        \resumeExperienceHeading
+          {\href{https://github.com/zubrailx/ovision-hack-2022}{\underline{\textbf{Ovision Hack Dev Track}}} $|$ \footnotesize\emph{Frontend Developer }}{Апрель 2022}
+        \resumeItemListStart
+            \resumeItem{Разработал одностраничное JavaScript веб-приложение с использованием React и Effector, считывающее изображение с камеры пользователя, отправляющее его на сервер и визуализирующее точки лица.}
+            \resumeItem{Реализовал кадрирование исходного изображения с помощью JS Tensorflow для снижения нагрузки.}
+        \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListEnd 
 
 
 %-------------------PROJECTS-------------------%
-\section{Projects%
-  {%
-    \hspace{4pt}\small\normalfont%
-  }
-}
+\section{Проекты}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source Python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{GitHub Visualization}
-      {Data visualization of Git log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step-by-step instructions on setting up developer environment on macOS.}
-  \resumeSubHeadingListEnd
 
+    \resumeProjectHeading
+    {\href{https://github.com/zubrailx/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}} $|$ \footnotesize\emph{Flutter, Python, Golang, MQTT, Kafka, ClickHouse}}{Февраль 2024 - Июнь 2024}
+    \resumeItemListStart
+        \resumeItem{Разработал мобильное приложение на Flutter для сбора данных датчиков акселерометра, гироскопа и GPS и визуализации оценок состояния дорожного покрытия на карте.}
+        \resumeItem{Обучил и сравнил модели машинного обучения на подготовленном открытом наборе данных датчиков.}
+        \resumeItem{Спроектировал сервис предобработки и прогнозирования, буферизированной обработки и API.}
+        \resumeItem{Реализовал сервисы для тестирования моделей и сбора необработанных реальных данных.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\href{https://github.com/IoT-MHWS}{\underline{\textbf{IoT World Simulation}}} $|$ \footnotesize\emph{C++, CMake, Conan, Python, gRPC, GTest, Protobuf, Docker}}{Май 2023 - Июнь 2023}
+    \resumeItemListStart
+        \resumeItem{Симулировал реальных мир для устройств сбора данных, реализовав алгоритмы для освещения, температуры, движения воздуха, беспроводной сети с учетом препятствий.}
+        \resumeItem{Имплементировал многопоточную работу приложения с помощью мьютексов, коллбеков и очередей.}
+        \resumeItem{Создал виртуальные устройства, умеющие собирать данные с симуляции и отправлять их в озеро данных.}
+        \resumeItem{Осуществил обмен между симуляцией и виртуальными устройствами с помощью gRPC посредством одиночных вызовов и потоков.}
+    \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
 \end{document}

@@ -16,6 +16,7 @@
 \usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
+\usepackage{ragged2e}
 
 \usepackage{graphicx}
 \graphicspath{ {./} }
@@ -39,14 +40,15 @@
 
 \raggedbottom
 \raggedright % Left alignment
+% \justifying
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
 
 \titleformat{\subsection}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
 
 % Ensure that generate PDF is machine readable/ATS parsable
@@ -58,31 +60,31 @@
 % HEADING
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeExperienceHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -100,4 +102,9 @@
 
 
 %-------------------DOCUMENT-------------------%
+\hypersetup{
+    pdftitle={Кулаков Никита - DevOps},
+    pdfauthor={Кулаков Никита},
+}
+
 \input{document}

@@ -1,12 +1,56 @@
+\hypersetup{
+    pdftitle={Кулаков Никита - DevOps},
+    pdfauthor={Кулаков Никита},
+}
+
 \begin{document}
 
 %-------------------HEADING-------------------%
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email: \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-  \href{https://sourabhbajaj.com/}{sourabhbajaj.com} & Mobile: \href{tel:+11234567890}{+1-123-456-7890} \\
-\end{tabular*}
+\begin{table}[h]
+  %\fcolorbox{red}{gray}
+  \noindent{%
+    \begin{minipage}[t]{0.86\textwidth}
+      \vspace{1pt}
+      \begin{center}
+        \textbf{\Huge\scshape Кулаков Никита Васильевич}
+      \end{center}
+      \vspace{-6pt}
 
+      Дата рождения: 05.06.2003
+      \vspace{1pt}
 
+      Санкт-Петербург, Россия%
+      \small
+      \hspace{5pt}
+      \faIcon{phone} %
+      \href{tel:79243306869}{\underline{+7 924 330 6869}}%
+      \vspace{6pt}
+
+      \faIcon{telegram} %
+      \href{https://t.me/zubrailx}{\underline{t.me/zubrailx}}%
+      \hspace{10pt}%
+      \faIcon{envelope} %
+      \href{mailto:nv1kulakov@gmail.com}{\underline{nv1kulakov@gmail.com}}%
+      \hspace{10pt}%
+      \faIcon{linkedin} %
+      \href{https://www.linkedin.com/in/zubrailx/}{\underline{linkedin.com/zubrailx}}%
+      \hspace{10pt}%
+      \faIcon{github} %
+      \href{https://github.com/zubrailx}{\underline{github.com/zubrailx}}%
+    \end{minipage}%
+  }%
+  \hfill%
+  \noindent{%
+    \begin{minipage}[t]{0.13\textwidth}
+      \vspace{0pt}
+      {%
+        \setlength{\fboxsep}{0pt}
+        \setlength{\fboxrule}{0.3pt}
+        \fbox{\includegraphics[width=2.4cm, height=3.2cm]{img/face.jpg}}}
+    \end{minipage}%
+  }%
+\end{table}
+\vspace{-40pt}
 %-------------------EDUCATION-------------------%
 \section{Education}
   \resumeSubHeadingListStart
@@ -92,7 +136,11 @@
 
 
 %-------------------PROJECTS-------------------%
-\section{Projects}
+\section{Projects%
+  {%
+    \hspace{4pt}\small\normalfont%
+  }
+}
   \resumeSubHeadingListStart
     \resumeSubItem{QuantSoftware Toolkit}
       {Open source Python library for financial data analysis and machine learning for finance.}

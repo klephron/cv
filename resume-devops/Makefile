@@ -1,3 +1,9 @@
+LATEXMK := latexmk
+HTLATEX := htlatex
+PANDOC := pandoc
+PANDOC_PDF_ENGINE := xelatex
+PDFUNITE := pdfunite
+
 HTML_DIR := $(CURDIR)/html
 
 .PHONY: install/fonts build build/ru clean/aux clean/pdf clean
@@ -16,18 +22,18 @@ install/fonts:
 build: build/pdf/ru build/pdf/en build/html/ru build/html/en
 
 build/pdf/ru:
-	latexmk -pdf main.ru.tex
+	$(LATEXMK) -pdf main.ru.tex
 
 build/pdf/en:
-	latexmk -pdf main.en.tex
+	$(LATEXMK) -pdf main.en.tex
 
 build/html/ru:
 	mkdir -p $(HTML_DIR)
-	htlatex main.ru.tex "" "" -d$(HTML_DIR)/
+	$(HTLATEX) main.ru.tex "" "" -d$(HTML_DIR)/
 
 build/html/en:
 	mkdir -p $(HTML_DIR)
-	htlatex main.en.tex "" "" -d$(HTML_DIR)/
+	$(HTLATEX) main.en.tex "" "" -d$(HTML_DIR)/
 
 clean/aux:
 	rm -f *.aux

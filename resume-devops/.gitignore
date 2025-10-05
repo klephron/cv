@@ -5,3 +5,14 @@ build/
 *.log
 *.out
 *.synctex.gz
+*.4ct
+*.4tc
+*.dvi
+*.idv
+*.lg
+*.tmp
+*.css
+*.html
+*.xref
+!html/*.css
+!html/*.html

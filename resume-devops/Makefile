@@ -3,6 +3,7 @@ HTLATEX := htlatex
 PANDOC := pandoc
 PANDOC_PDF_ENGINE := xelatex
 PDFUNITE := pdfunite
+MKTEXTFM := mktextfm
 
 HTML_DIR := $(CURDIR)/html
 
@@ -13,35 +14,28 @@ HTML_DIR := $(CURDIR)/html
 # for russian CV
 # may use proper path to mktextfm
 install/fonts:
-	mktextfm labx2074
-	mktextfm lacc1095
-	mktextfm lacc1200
-	mktextfm lati0900
-	mktextfm laxc2074
+	@$(MKTEXTFM) labx2074
+	@$(MKTEXTFM) lacc1095
+	@$(MKTEXTFM) lacc1200
+	@$(MKTEXTFM) lati0900
+	@$(MKTEXTFM) laxc2074
 
-build: build/pdf/ru build/pdf/en build/html/ru build/html/en
+build: main.ru.pdf main.en.pdf html/main.ru.html html/main.en.html
 
-build/pdf/ru:
-	$(LATEXMK) -pdf main.ru.tex
+%.pdf: %.tex
+	@$(LATEXMK) -pdf $<
 
-build/pdf/en:
-	$(LATEXMK) -pdf main.en.tex
-
-build/html/ru:
-	mkdir -p $(HTML_DIR)
-	$(HTLATEX) main.ru.tex "" "" -d$(HTML_DIR)/
-
-build/html/en:
-	mkdir -p $(HTML_DIR)
-	$(HTLATEX) main.en.tex "" "" -d$(HTML_DIR)/
+html/%.html: %.tex
+	@mkdir -pv $(HTML_DIR)
+	@$(HTLATEX) $< "" "" -d$(HTML_DIR)/
 
 clean/aux:
-	rm -f *.aux
-	rm -f *.fdb_latexmk
-	rm -f *.fls
-	rm -f *.log
-	rm -f *.out
-	rm -f *.synctex.gz
+	@rm -fv *.aux
+	@rm -fv *.fdb_latexmk
+	@rm -fv *.fls
+	@rm -fv *.log
+	@rm -fv *.out
+	@rm -fv *.synctex.gz
 
 clean/pdf:
 	rm -f *.pdf

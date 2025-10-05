@@ -1,3 +1,5 @@
+HTML_DIR := $(CURDIR)/html
+
 .PHONY: install/fonts build build/ru clean/aux clean/pdf clean
 
 .DEFAULT_GOAL := build
@@ -11,13 +13,21 @@ install/fonts:
 	mktextfm lati0900
 	mktextfm laxc2074
 
-build: build/ru build/en
+build: build/pdf/ru build/pdf/en build/html/ru build/html/en
 
-build/ru:
+build/pdf/ru:
 	latexmk -pdf main.ru.tex
 
-build/en:
+build/pdf/en:
 	latexmk -pdf main.en.tex
+
+build/html/ru:
+	mkdir -p $(HTML_DIR)
+	htlatex main.ru.tex "" "" -d$(HTML_DIR)/
+
+build/html/en:
+	mkdir -p $(HTML_DIR)
+	htlatex main.en.tex "" "" -d$(HTML_DIR)/
 
 clean/aux:
 	rm -f *.aux

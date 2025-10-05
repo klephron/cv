@@ -1,0 +1,236 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[russian,english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+
+\usepackage{graphicx}
+\graphicspath{ {./} }
+
+%-------------------PAGE LAYOUT-------------------%
+\pagestyle{fancy}
+\fancyhf{} % Clear header and footer
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\setlength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.0in}
+
+\setlength{\footskip}{4.08003pt}
+%-------------------FORMATTING-------------------%
+\urlstyle{same}
+
+\raggedbottom
+\raggedright % Left alignment
+% \justifying
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
+
+\titleformat{\subsection}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+%-------------------COMMANDS-------------------%
+\urlstyle{same}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% HEADING
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeExperienceHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% ITEM
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+
+%-------------------DOCUMENT-------------------%
+\hypersetup{
+    pdftitle={Кулаков Никита - DevOps},
+    pdfauthor={Кулаков Никита},
+}
+
+
+\begin{document}
+
+%-------------------HEADING-------------------%
+\begin{table}[h]
+  %\fcolorbox{red}{gray}
+  \noindent{%
+    \begin{minipage}[t]{0.86\textwidth}
+      \vspace{1pt}
+      \begin{center}
+        \textbf{\Huge\scshape Кулаков Никита Васильевич}
+      \end{center}
+      \vspace{-6pt}
+
+      Дата рождения: 05.06.2003
+      \vspace{2pt}
+
+      Санкт-Петербург, Россия%
+      \small
+      \hspace{5pt}
+      \faIcon{phone} %
+      \href{tel:79243306869}{\underline{+7 924 330 6869}}%
+      \vspace{6pt}
+
+      \faIcon{telegram} %
+      \href{https://t.me/klephron}{\underline{t.me/klephron}}%
+      \hspace{10pt}%
+      \faIcon{envelope} %
+      \href{mailto:klephron@gmail.com}{\underline{klephron@gmail.com}}%
+      \hspace{10pt}%
+      \faIcon{linkedin} %
+      \href{https://www.linkedin.com/in/klephron/}{\underline{linkedin.com/klephron}}%
+      \hspace{10pt}%
+      \faIcon{github} %
+      \href{https://github.com/klephron}{\underline{github.com/klephron}}%
+    \end{minipage}%
+  }%
+  \hfill%
+  \noindent{%
+    \begin{minipage}[t]{0.13\textwidth}
+      \vspace{0pt}
+      {%
+        \setlength{\fboxsep}{0pt}
+        \setlength{\fboxrule}{0.3pt}
+        \fbox{\includegraphics[width=2.4cm, height=3.2cm]{img/face.jpg}}}
+    \end{minipage}%
+  }%
+\end{table}
+\vspace{-36pt}
+
+%-------------------ABOUT ME-------------------%
+\section{О себе}
+Специалист с глубокими знаниями Linux-систем. Интересуюсь настройкой и автоматизацией процессов. Мне нравится детально разбираться в работе различных технологий, чтобы понимать их внутренние механизмы. Стремлюсь развиваться в сфере DevOps, применяя свои знания для создания эффективных и надежных инфраструктур.
+
+%-------------------EDUCATION-------------------%
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Университет ИТМО}{Санкт-Петербург, 2026}
+      {Магистратура Системное программное обеспечение}{-}
+
+    \resumeSubheading
+      {Университет ИТМО}{Санкт-Петербург, 2024}
+      {Бакалавриат Информатика и вычислительная техника}{4.92/5.00}
+
+  \resumeSubHeadingListEnd
+
+%-------------------SKILLS-------------------%
+\section{Навыки}
+\resumeSubHeadingListStart
+  \small{\item{
+    \textbf{Технологии}{: Ansible, AWS (SQS, S3), ClickHouse, Cloud, Docker, GitHub/GitLab Actions, Hazelcast, Kafka, Keycloak, KVM, Linux, MongoDB, Nginx, PostgreSQL, RabbitMQ, Redis, Terraform }
+
+   \textbf{Языки}{: C/C++, Java, Python, JS/TS, Golang, Bash, Rust, SQL }
+
+   \textbf{Иностранные языки}{: Английский - B2}%
+  }}
+\resumeSubHeadingListEnd
+
+%-------------------EXPERIENCE-------------------%
+\section{Опыт}
+  \resumeSubHeadingListStart
+    \resumeExperienceHeading
+      {\textbf{ITMO Events} $|$ \footnotesize\emph{Team Lead, Frontend Developer, DevOps} $|$ практика}{Февраль 2024 - Май 2024}
+
+      {\vspace{-10pt}\small Система управления мероприятиями и площадками.\vspace{-7pt}}
+
+    \resumeItemListStart
+      \resumeItem{Стандартизовал процесс синхронизации API, разработал адаптер для взаимодействия с приложением, что позволило снизить вероятность возникновения рисков, связанных с обратной совместимостью.}
+      \resumeItem{Настроил статические анализаторы кода и проверки слияния (merge check) с помощью Github Actions для запросов на внесение изменений (pull request).}
+      \resumeItem{Развернул систему для проведения демонстраций заказчику, попутно разрешив множественные конфликты.}
+    \resumeItemListEnd
+
+    \resumeExperienceHeading
+      {{\underline{\textbf{Bluster Wind}}} $|$ \footnotesize\emph{DevOps, Backend Developer} $|$ стартап, команда из 12 человек}{Октябрь 2023 - Февраль 2024}
+
+      {\vspace{-10pt}\small Социальная сеть для проведения опросов, создания профилей пользователей на основе их голосований и визуализации результатов по заданным параметрам на графиках.\vspace{-7pt}}
+
+    \resumeItemListStart
+      \resumeItem{Настроил сервер для разработки, TLS, Nginx, Liquibase, Keycloak, Container Registry, self-hosted DinD runners.}
+      \resumeItem{Реализовал пайплайны для тестирования, сохранения контейнеров и запуска серверных приложений, что позволило ускорить разработку на 30 процентов.}
+      \resumeItem{Разработал модуль управления пользователями и подписками для монолитного приложения на Java Spring.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------PROJECTS-------------------%
+\section{Проекты}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\href{https://github.com/zubrailx/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}} $|$ \footnotesize\emph{Flutter, Python, Golang, MQTT, Kafka, ClickHouse}}{Февраль 2024 - Июнь 2024}
+
+      {\vspace{-10pt}\small Система отслеживания состояния дорожного покрытия при помощи мобильных устройств водителей.\vspace{-7pt}}
+
+    \resumeItemListStart
+      \resumeItem{Обеспечил горизонтальное масштабирование благодаря продуманной архитектуре и выбору технологий.}
+      \resumeItem{Увеличил пропускную способностью системы в 2.5 раза, оптимизировав узкие места, найденные при помощи проведенного нагрузочного тестирования.}
+      \resumeItem{Повысил точность предсказаний на 0.22, за счет использования разработанных сервисов для тестирования и сбора необработанных данных датчиков.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\href{https://github.com/IoT-MHWS}{\underline{\textbf{IoT World Simulation}}} $|$ \footnotesize\emph{C++, CMake, Conan, Python, gRPC, GTest, Protobuf, Docker}}{Май 2023 - Июнь 2023}
+
+      {\vspace{-10pt}\small Система моделирования процессов реального мира для устройств, собирающих состояния окружающей среды и влияющих на саму систему. Взаимодействие с устройствами, выступающими агентами, происходит через gRPC. \vspace{-6pt}}
+
+  \resumeSubHeadingListEnd
+\end{document}

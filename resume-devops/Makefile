@@ -11,10 +11,13 @@ install/fonts:
 	mktextfm lati0900
 	mktextfm laxc2074
 
-build: build/ru
+build: build/ru build/en
 
 build/ru:
-	latexmk -pdf main.tex
+	latexmk -pdf main.ru.tex
+
+build/en:
+	latexmk -pdf main.en.tex
 
 clean/aux:
 	rm -f *.aux

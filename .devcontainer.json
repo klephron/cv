@@ -1,6 +1,5 @@
 {
-  "build": { "dockerfile": "Dockerfile" },
-  "remoteUser": "dev",
+  "image": "klephron/documentation-devcontainer:latest",
   "features": {
     "ghcr.io/devcontainers/features/sshd:latest": {},
     "ghcr.io/devcontainers/features/common-utils:latest": {
@@ -20,6 +19,7 @@
     "ghcr.io/devcontainers-extra/features/eza:latest": {},
     "ghcr.io/devcontainers-extra/features/ripgrep:latest": {}
   },
+  "remoteUser": "dev",
   "mounts": [
     "type=bind,source=${localEnv:HOME}/.ssh,target=/home/dev/.ssh,readonly"
   ]

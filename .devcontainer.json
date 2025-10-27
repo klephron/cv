@@ -7,8 +7,7 @@
       "configureZshAsDefaultShell": true,
       "installOhMyZsh": false,
       "installOhMyZshConfig": false,
-      "upgradePackages": false,
-      "username": "dev"
+      "upgradePackages": false
     },
     "ghcr.io/duduribeiro/devcontainer-features/neovim:latest": {},
     "ghcr.io/duduribeiro/devcontainer-features/tmux:latest": {
@@ -19,8 +18,8 @@
     "ghcr.io/devcontainers-extra/features/eza:latest": {},
     "ghcr.io/devcontainers-extra/features/ripgrep:latest": {}
   },
-  "remoteUser": "dev",
+  "remoteUser": "ubuntu",
   "mounts": [
-    "type=bind,source=${localEnv:HOME}/.ssh,target=/home/dev/.ssh,readonly"
+    "type=bind,source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh,readonly"
   ]
 }

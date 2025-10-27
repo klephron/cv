@@ -1,6 +1,6 @@
 {
   "build": { "dockerfile": "Dockerfile" },
-  "remoteUser": "user",
+  "remoteUser": "dev",
   "features": {
     "ghcr.io/devcontainers/features/sshd:latest": {},
     "ghcr.io/devcontainers/features/common-utils:latest": {
@@ -9,7 +9,7 @@
       "installOhMyZsh": false,
       "installOhMyZshConfig": false,
       "upgradePackages": false,
-      "username": "user"
+      "username": "dev"
     },
     "ghcr.io/duduribeiro/devcontainer-features/neovim:latest": {},
     "ghcr.io/duduribeiro/devcontainer-features/tmux:latest": {
@@ -21,6 +21,6 @@
     "ghcr.io/devcontainers-extra/features/ripgrep:latest": {}
   },
   "mounts": [
-    "type=bind,source=${localEnv:HOME}/.ssh,target=/home/user/.ssh,readonly"
+    "type=bind,source=${localEnv:HOME}/.ssh,target=/home/dev/.ssh,readonly"
   ]
 }

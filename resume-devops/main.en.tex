@@ -1,118 +1,13 @@
 \documentclass[letterpaper,11pt]{article}
-
-\usepackage[T1,T2A]{fontenc}
-\usepackage[utf8]{inputenc}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[russian,english]{babel}
-\usepackage{tabularx}
-\usepackage{xcolor}
-\usepackage{fontawesome5}
-\usepackage{ragged2e}
-
-\usepackage{graphicx}
-\graphicspath{ {./} }
-
-%-------------------PAGE LAYOUT-------------------%
-\pagestyle{fancy}
-\fancyhf{} % Clear header and footer
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-\setlength{\oddsidemargin}{-0.5in}
-\setlength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\setlength{\topmargin}{-0.6in}
-\addtolength{\textheight}{1.0in}
-
-\setlength{\footskip}{4.08003pt}
-%-------------------FORMATTING-------------------%
-\urlstyle{same}
-
-\raggedbottom
-\raggedright % Left alignment
-% \justifying
-\setlength{\tabcolsep}{0in}
-
-\titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
-
-\titleformat{\subsection}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
-
-% Ensure that generate PDF is machine readable/ATS parsable
-\pdfgentounicode=1
-%-------------------COMMANDS-------------------%
-\urlstyle{same}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-% HEADING
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeExperienceHeading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-% ITEM
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
-
+\usepackage{preamble}
 %-------------------DOCUMENT-------------------%
 \hypersetup{
     pdftitle={Nikita Kulakov - DevOps},
     pdfauthor={Nikita Kulakov},
 }
-
-
 \begin{document}
-
 %-------------------HEADING-------------------%
 \begin{table}[h]
-  %\fcolorbox{red}{gray}
   \noindent{%
     \begin{minipage}[t]{0.86\textwidth}
       \vspace{1pt}
@@ -163,16 +58,15 @@ Specialist with extensive knowledge of Linux systems, with a focus on configurat
 
 %-------------------EDUCATION-------------------%
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {ITMO}{Saint Petersburg, 2026}
-      {Master’s Degree in System and Application Software}{5.00/5.00}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {ITMO}{Saint Petersburg, 2026}
+    {Master’s Degree in System and Application Software}{5.00/5.00}
 
-    \resumeSubheading
-      {ITMO}{Saint Petersburg, 2024}
-      {Bachelor’s Degree in Computer Science and Engineering}{4.92/5.00}
-
-  \resumeSubHeadingListEnd
+  \resumeSubheading
+    {ITMO}{Saint Petersburg, 2024}
+    {Bachelor’s Degree in Computer Science and Engineering}{4.92/5.00}
+\resumeSubHeadingListEnd
 
 %-------------------SKILLS-------------------%
 \section{Skills}
@@ -182,7 +76,7 @@ Specialist with extensive knowledge of Linux systems, with a focus on configurat
 
     \textbf{Technical skills}{: Networking troubleshooting \& diagnostics, System performance tuning}
 
-   \textbf{Languages}{: C/C++ (Boost), Java (Spring Boot, Spring Cloud, Micronaut), Python, JS/TS, Golang, Bash, Rust, SQL, Protobuf }
+   \textbf{Languages}{: C/C++, Java (Spring Boot, Spring Cloud, Micronaut), Python, JS/TS, Golang, Bash, Rust, SQL, Protobuf }
 
    \textbf{Foreign languages}{: Russian - Native, English - B2}%
   }}
@@ -190,49 +84,52 @@ Specialist with extensive knowledge of Linux systems, with a focus on configurat
 
 %-------------------EXPERIENCE-------------------%
 \section{Experience}
-  \resumeSubHeadingListStart
-    \resumeExperienceHeading
-      {\textbf{ITMO Events} $|$ \footnotesize\emph{Team Lead, Frontend Developer, DevOps} $|$ practice}{February 2024 - May 2024}
+\resumeSubHeadingListStart
+  \resumeExperienceHeading
+    {\textbf{ITMO Events} $|$ \footnotesize\emph{Team Lead, Frontend Developer, DevOps} $|$ practice}{February 2024 - May 2024}
 
-      {\vspace{-10pt}\small Event and Venue Management System.\vspace{-7pt}}
+    {\vspace{-10pt}\small Event and Venue Management System.\vspace{-7pt}}
 
-    \resumeItemListStart
-      \resumeItem{Standardized the API synchronization process and developed an adapter for application interaction, reducing risks related to backward compatibility.}
-      \resumeItem{Configured static code analyzers and merge checks using GitHub Actions for pull requests.}
-      \resumeItem{Deployed a system for client demonstrations while resolving multiple conflicts.}
-    \resumeItemListEnd
+  \resumeItemListStart
+    \resumeItem{Standardized the API synchronization process and developed an adapter for application interaction, reducing risks related to backward compatibility.}
+    \resumeItem{Configured static code analyzers and merge checks using GitHub Actions for pull requests.}
+    \resumeItem{Deployed a system for client demonstrations while resolving multiple conflicts.}
+  \resumeItemListEnd
 
-    \resumeExperienceHeading
-      {{\underline{\textbf{Bluster Wind}}} $|$ \footnotesize\emph{DevOps, Backend Developer} $|$ startup, team of 12 members }{October 2023 - February 2024}
+  \resumeExperienceHeading
+    {{\underline{\textbf{Bluster Wind}}} $|$ \footnotesize\emph{DevOps, Backend Developer} $|$ startup, team of 12 members}{October 2023 - February 2024}
 
-      {\vspace{-10pt}\small A social network for conducting surveys, creating user profiles based on their votes, and visualizing results on charts according to specified parameters.\vspace{-7pt}}
+    {\vspace{-10pt}\small A social network for conducting surveys, creating user profiles based on their votes, and visualizing results on charts according to specified parameters.\vspace{-7pt}}
 
-    \resumeItemListStart
-      \resumeItem{Configured the development server, TLS, Nginx, Liquibase, Keycloak, Container Registry, and self-hosted DinD runners.}
-      \resumeItem{Implemented pipelines for testing, container storage, and server application deployment, accelerating development by 30 percent.}
-      \resumeItem{Developed a user and subscription management module for a monolithic Java Spring application.}
-    \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+  \resumeItemListStart
+    \resumeItem{Configured the development server, TLS, Nginx, Liquibase, Keycloak, Container Registry, and self-hosted DinD runners.}
+    \resumeItem{Implemented pipelines for testing, container storage, and server application deployment.}
+    \resumeItem{Developed a user and subscription management module for a monolithic Java Spring application.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-------------------PROJECTS-------------------%
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\href{https://github.com/klephron/natrix}{\underline{\textbf{Natrix Language}}} $|$ \footnotesize\emph{C, Make, Antlr3, Python, Docker}}{October 2024 - April 2025}
+
+    {\vspace{-10pt}\small A compiled, dynamic, strongly typed general purpose language. \vspace{-6pt}}
+
+    \resumeItemListStart
+      \resumeItem{Improved code execution speed by 3 times through use of profiling tools.}
+      \resumeItem{Developed a language debugger leveraging deep understanding of Linux process architecture.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
     {\href{https://github.com/klephron/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}} $|$ \footnotesize\emph{Flutter, Python, Golang, MQTT, Kafka, ClickHouse}}{February 2024 - June 2024}
 
     {\vspace{-10pt}\small Road surface condition monitoring system using drivers’ mobile devices.\vspace{-7pt}}
 
-  \resumeItemListStart
-    \resumeItem{Enabled horizontal scaling through well-designed architecture and technology choices.}
-    \resumeItem{Increased system throughput by optimizing bottlenecks identified during load testing.}
-    \resumeItem{Improved prediction accuracy through the development of services for testing and collecting raw sensor data.}
-  \resumeItemListEnd
-
-    \resumeProjectHeading
-    {\href{https://github.com/IoT-MHWS}{\underline{\textbf{IoT World Simulation}}} $|$ \footnotesize\emph{C++, CMake, Conan, Python, gRPC, GTest, Protobuf, Docker}}{May 2023 - June 2023}
-
-      {\vspace{-10pt}\small A system for modeling real-world processes for devices that collect environmental conditions and affect the system itself. Interaction with devices acting as agents takes place through gRPC. \vspace{-6pt}}
-
-  \resumeSubHeadingListEnd
+    \resumeItemListStart
+      \resumeItem{Enabled horizontal scaling through well-designed architecture and technology choices.}
+      \resumeItem{Increased system throughput by optimizing bottlenecks identified during load testing.}
+      \resumeItem{Improved prediction accuracy through the development of services for testing and collecting raw sensor data.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 \end{document}

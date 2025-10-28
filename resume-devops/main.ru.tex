@@ -1,118 +1,13 @@
 \documentclass[letterpaper,11pt]{article}
-
-\usepackage[T1,T2A]{fontenc}
-\usepackage[utf8]{inputenc}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[russian,english]{babel}
-\usepackage{tabularx}
-\usepackage{xcolor}
-\usepackage{fontawesome5}
-\usepackage{ragged2e}
-
-\usepackage{graphicx}
-\graphicspath{ {./} }
-
-%-------------------PAGE LAYOUT-------------------%
-\pagestyle{fancy}
-\fancyhf{} % Clear header and footer
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-\setlength{\oddsidemargin}{-0.5in}
-\setlength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\setlength{\topmargin}{-0.6in}
-\addtolength{\textheight}{1.0in}
-
-\setlength{\footskip}{4.08003pt}
-%-------------------FORMATTING-------------------%
-\urlstyle{same}
-
-\raggedbottom
-\raggedright % Left alignment
-% \justifying
-\setlength{\tabcolsep}{0in}
-
-\titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
-
-\titleformat{\subsection}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
-
-% Ensure that generate PDF is machine readable/ATS parsable
-\pdfgentounicode=1
-%-------------------COMMANDS-------------------%
-\urlstyle{same}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-% HEADING
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeExperienceHeading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-% ITEM
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
-
+\usepackage{preamble}
 %-------------------DOCUMENT-------------------%
 \hypersetup{
     pdftitle={Кулаков Никита - DevOps},
     pdfauthor={Кулаков Никита},
 }
-
-
 \begin{document}
-
 %-------------------HEADING-------------------%
 \begin{table}[h]
-  %\fcolorbox{red}{gray}
   \noindent{%
     \begin{minipage}[t]{0.86\textwidth}
       \vspace{1pt}
@@ -159,20 +54,20 @@
 
 %-------------------ABOUT ME-------------------%
 \section{О себе}
-Специалист с обширными знаниями в области Linux-систем, с акцентом на конфигурацию и автоматизацию процессов. Ориентируюсь на детальный анализ технологий для глубокого понимания их внутренних механизмов. Стремлюсь к развитию в сфере DevOps, применяя экспертные навыки для создания эффективной и надежной инфраструктуры.
+Специалист с глубокими знаниями систем Linux, сосредоточенный на их конфигурации и автоматизации процессов. Стремится к детальному анализу технологий для глубокого понимания их внутренних механизмов. Нацелен на развитие в области DevOps через создание эффективной и надежной инфраструктуры.
 
 %-------------------EDUCATION-------------------%
 \section{Образование}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {ИТМО}{Санкт-Петербург, 2026}
-      {Магистратура Системное и прикладное программное обеспечение}{5.00/5.00}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {ИТМО}{Санкт-Петербург, 2026}
+    {Магистратура Системное и прикладное программное обеспечение}{5.00/5.00}
 
-    \resumeSubheading
-      {ИТМО}{Санкт-Петербург, 2024}
-      {Бакалавриат Информатика и вычислительная техника}{4.92/5.00}
+  \resumeSubheading
+    {ИТМО}{Санкт-Петербург, 2024}
+    {Бакалавриат Информатика и вычислительная техника}{4.92/5.00}
 
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 %-------------------SKILLS-------------------%
 \section{Навыки}
@@ -182,7 +77,7 @@
 
     \textbf{Технические навыки}{: Устранение неполадок сети и диагностика, настройка производительности системы}
 
-   \textbf{Языки}{: C/C++ (Boost), Java (Spring Boot, Spring Cloud, Micronaut), Python, JS/TS, Golang, Bash, Rust, SQL, Protobuf }
+   \textbf{Языки}{: C/C++, Java (Spring Boot, Spring Cloud, Micronaut), Python, JS/TS, Golang, Bash, Rust, SQL, Protobuf }
 
    \textbf{Иностранные языки}{: Английский - B2}%
   }}
@@ -190,49 +85,53 @@
 
 %-------------------EXPERIENCE-------------------%
 \section{Опыт}
-  \resumeSubHeadingListStart
-    \resumeExperienceHeading
-      {\textbf{ITMO Events} $|$ \footnotesize\emph{Team Lead, Frontend Developer, DevOps} $|$ практика}{Февраль 2024 - Май 2024}
+\resumeSubHeadingListStart
+  \resumeExperienceHeading
+    {\textbf{ITMO Events} $|$ \footnotesize\emph{Team Lead, Frontend Developer, DevOps} $|$ практика}{Февраль 2024 - Май 2024}
 
-      {\vspace{-10pt}\small Система управления мероприятиями и площадками.\vspace{-7pt}}
+    {\vspace{-10pt}\small Система управления мероприятиями и площадками.\vspace{-7pt}}
 
-    \resumeItemListStart
-      \resumeItem{Стандартизовал процесс синхронизации API, разработал адаптер для взаимодействия с приложением, что позволило снизить вероятность возникновения рисков, связанных с обратной совместимостью.}
-      \resumeItem{Настроил статические анализаторы кода и проверки слияния (merge check) с помощью Github Actions для запросов на внесение изменений (pull request).}
-      \resumeItem{Развернул систему для проведения демонстраций заказчику, попутно разрешив множественные конфликты.}
-    \resumeItemListEnd
+  \resumeItemListStart
+    \resumeItem{Стандартизировал процесс синхронизации API и разработал адаптер для взаимодействия с приложением, что снизило риски, связанные с обратной совместимостью.}
+    \resumeItem{Настроил статический анализ кода и проверки слияния в Github Actions для pull request’ов.}
+    \resumeItem{Развернул систему для демонстраций заказчику, устранив при этом множество конфликтов.}
+  \resumeItemListEnd
 
-    \resumeExperienceHeading
-      {{\underline{\textbf{Bluster Wind}}} $|$ \footnotesize\emph{DevOps, Backend Developer} $|$ стартап, команда из 12 человек}{Октябрь 2023 - Февраль 2024}
+  \resumeExperienceHeading
+    {{\underline{\textbf{Bluster Wind}}} $|$ \footnotesize\emph{DevOps, Backend Developer} $|$ стартап, команда из 12 человек}{Октябрь 2023 - Февраль 2024}
 
-      {\vspace{-10pt}\small Социальная сеть для проведения опросов, создания профилей пользователей на основе их голосований и визуализации результатов по заданным параметрам на графиках.\vspace{-7pt}}
+    {\vspace{-10pt}\small Социальная сеть для проведения опросов, создания профилей пользователей на основе их голосований и визуализации результатов по заданным параметрам на графиках.\vspace{-7pt}}
 
-    \resumeItemListStart
-      \resumeItem{Настроил сервер для разработки, TLS, Nginx, Liquibase, Keycloak, Container Registry, self-hosted DinD runners.}
-      \resumeItem{Реализовал пайплайны для тестирования, сохранения контейнеров и запуска серверных приложений, что позволило ускорить разработку на 30 процентов.}
-      \resumeItem{Разработал модуль управления пользователями и подписками для монолитного приложения на Java Spring.}
-    \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+  \resumeItemListStart
+    \resumeItem{Настроил сервер разработки с TLS, Nginx, Liquibase, Keycloak, Container Registry и self-hosted DinD runners.}
+    \resumeItem{Реализовал пайплайны для тестирования, сборки контейнеров и запуска серверных приложений.}
+    \resumeItem{Разработал модуль управления пользователями и подписками для монолитного приложения на Java Spring.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-------------------PROJECTS-------------------%
 \section{Проекты}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-    {\href{https://github.com/zubrailx/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}} $|$ \footnotesize\emph{Flutter, Python, Golang, MQTT, Kafka, ClickHouse}}{Февраль 2024 - Июнь 2024}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\href{https://github.com/klephron/natrix}{\underline{\textbf{Natrix Language}}} $|$ \footnotesize\emph{C, Make, Antlr3, Python, Docker}}{October 2024 - April 2025}
 
-      {\vspace{-10pt}\small Система отслеживания состояния дорожного покрытия при помощи мобильных устройств водителей.\vspace{-7pt}}
+    {\vspace{-10pt}\small Компилируемый, динамический, строго типизированный язык общего назначения. \vspace{-6pt}}
 
     \resumeItemListStart
-      \resumeItem{Обеспечил горизонтальное масштабирование благодаря продуманной архитектуре и выбору технологий.}
-      \resumeItem{Увеличил пропускную способностью системы, оптимизировав узкие места, найденные при помощи проведенного нагрузочного тестирования.}
-      \resumeItem{Повысил точность предсказаний за счет использования разработанных сервисов для тестирования и сбора необработанных данных датчиков.}
+      \resumeItem{Увеличил скорость выполнения кода в 3 раза с помощью инструментов профилирования.}
+      \resumeItem{Разработал отладчик языка, опираясь на глубокое понимание устройства процессов в Linux.}
     \resumeItemListEnd
 
-    \resumeProjectHeading
-    {\href{https://github.com/IoT-MHWS}{\underline{\textbf{IoT World Simulation}}} $|$ \footnotesize\emph{C++, CMake, Conan, Python, gRPC, GTest, Protobuf, Docker}}{Май 2023 - Июнь 2023}
+  \resumeProjectHeading
+  {\href{https://github.com/zubrailx/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}} $|$ \footnotesize\emph{Flutter, Python, Golang, MQTT, Kafka, ClickHouse}}{Февраль 2024 - Июнь 2024}
 
-      {\vspace{-10pt}\small Система моделирования процессов реального мира для устройств, собирающих состояния окружающей среды и влияющих на саму систему. Взаимодействие с устройствами, выступающими агентами, происходит через gRPC. \vspace{-6pt}}
+    {\vspace{-10pt}\small Система отслеживания состояния дорожного покрытия при помощи мобильных устройств водителей.\vspace{-7pt}}
 
-  \resumeSubHeadingListEnd
+  \resumeItemListStart
+    \resumeItem{Обеспечил горизонтальное масштабирование за счет продуманной архитектуры и выбора оптимальных технологий.}
+    \resumeItem{Увеличил пропускную способность системы, оптимизировав узкие места, выявленные реализованным нагрузочным тестированием.}
+    \resumeItem{Повысил точность предсказаний, внедрив сервисы для тестирования и сбора необработанных данных с датчиков.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
 \end{document}

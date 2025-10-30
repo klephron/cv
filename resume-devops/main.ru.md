@@ -16,7 +16,7 @@
 
 3. Навыки
 
-- Стек: Linux, Ansible, Terraform, Docker, Docker Swarm, Kubernetes, Prometheus, Grafana, ELK GitHub/GitLab CI/CD, Jenkins, Kafka, RabbitMQ, PostgreSQL, MongoDB, Redis Nginx, Wireguard, KVM, Make, CMake
+- Стек: Linux, Ansible, Terraform, Docker Swarm, Kubernetes, Prometheus, Grafana, ELK, GitHub/GitLab CI/CD, Jenkins, Kafka, RabbitMQ, PostgreSQL, MongoDB, Redis, Nginx, Wireguard, KVM, Make, CMake
 
 - Языки: C/C++, Java (Spring Cloud, Micronaut), Python, JS/TS, Golang, Bash, SQL, Rust, Protobuf
 

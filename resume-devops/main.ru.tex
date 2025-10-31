@@ -75,7 +75,7 @@
   \small{\item{
     \textbf{Стек}{: Linux, Ansible, Terraform, Docker Swarm, Kubernetes, Prometheus, Grafana, ELK, GitHub/GitLab CI/CD, Jenkins, Kafka, RabbitMQ, PostgreSQL, MongoDB, Redis, Nginx, Wireguard, KVM, Make, CMake }
 
-   \textbf{Языки}{: C/C++, Java (Spring Cloud, Micronaut), Python, JS/TS, Golang, Bash, SQL, Rust, Protobuf }
+   \textbf{Языки}{: Python, Go, Bash, SQL, C/C++, Java (Spring Cloud, Micronaut), JS/TS, Rust, Protobuf }
 
    \textbf{Иностранные языки}{: Английский - B2}%
   }}
@@ -85,25 +85,15 @@
 \section{Опыт}
 \resumeSubHeadingListStart
   \resumeExperienceHeading
-    {\textbf{ITMO Events} $|$ \footnotesize\emph{Frontend Team Lead/Developer, DevOps} $|$ практика}{Февраль 2024 - Июнь 2024}
+    {\textbf{Bluster Wind}}{Сентябрь 2023 - Февраль 2024}
 
-    {\vspace{-10pt}\small Система управления мероприятиями и площадками.\vspace{-7pt}}
-
-  \resumeItemListStart
-    \resumeItem{Стандартизировал процесс синхронизации API и разработал адаптер для взаимодействия с приложением, что снизило риски, связанные с обратной совместимостью.}
-    \resumeItem{Настроил статический анализ кода и проверки слияния в Github Actions для pull request’ов.}
-    \resumeItem{Развернул систему для демонстраций заказчику, устранив при этом множество конфликтов.}
-  \resumeItemListEnd
-
-  \resumeExperienceHeading
-    {{\underline{\textbf{Bluster Wind}}} $|$ \footnotesize\emph{DevOps, Backend Developer} $|$ стартап, команда из 12 человек}{Сентябрь 2023 - Февраль 2024}
-
-    {\vspace{-10pt}\small Социальная сеть для проведения опросов, создания профилей пользователей на основе их голосований и визуализации результатов по заданным параметрам на графиках.\vspace{-7pt}}
+    {\vspace{-10pt}\small Разработка социальной сети для проведения опросов и визуализации результатов.\vspace{-7pt}}
 
   \resumeItemListStart
-    \resumeItem{Настроил сервер разработки с TLS, Nginx, Liquibase, Keycloak, Container Registry и self-hosted DinD runners.}
-    \resumeItem{Реализовал пайплайны для тестирования, сборки контейнеров и запуска серверных приложений.}
-    \resumeItem{Разработал модуль управления пользователями и подписками для монолитного приложения на Java Spring.}
+    \resumeItem{Контейнеризировал серверные и вспомогательные приложения с использованием Docker, организовал хранение образов в частном Docker Registry.}
+    \resumeItem{Реализовал CI/CD-пайплайны в GitHub Actions с self-hosted runners для автоматического тестирования, сборки, релизов и деплоя.}
+    \resumeItem{Настроил TLS reverse-proxy на базе Nginx для безопасного доступа к сервисам.}
+    \resumeItem{Автоматизировал развертывание инфраструктуры с использованием Ansible и Terraform.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -111,25 +101,30 @@
 \section{Проекты}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-    {\href{https://github.com/klephron/natrix}{\underline{\textbf{Natrix Language}}} $|$ \footnotesize\emph{C, Make, Antlr3, Python, Docker}}{Октябрь 2024 - Апрель 2025}
+    {\href{https://github.com/klephron/heatbill}{\underline{\textbf{HeatBill}}}}{Март 2025 - Май 2025}
 
-    {\vspace{-10pt}\small Компилируемый, динамический, строго типизированный язык общего назначения. \vspace{-6pt}}
+    {\vspace{-10pt}\small Высоконагруженная система IoT для учета потребления тепла в многоквартирных домах. \vspace{-6pt}}
 
     \resumeItemListStart
-      \resumeItem{Увеличил скорость выполнения кода в 3 раза с помощью инструментов профилирования.}
-      \resumeItem{Разработал отладчик языка, опираясь на глубокое понимание устройства процессов в Linux.}
+      \resumeItem{Ansible, Terraform, KVM, Docker Swarm, Jenkins, Nginx, Consul, ELK Stack, RabbitMQ, MongoDB, Redis}
     \resumeItemListEnd
 
   \resumeProjectHeading
-  {\href{https://github.com/zubrailx/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}} $|$ \footnotesize\emph{Flutter, Python, Golang, MQTT, Kafka, ClickHouse}}{Февраль 2024 - Июнь 2024}
+    {\href{https://github.com/klephron/me-storage}{\underline{\textbf{ME Storage}}}}{Февраль 2025 - Апрель 2025}
+
+    {\vspace{-10pt}\small Система хранения виртуальных предметов. \vspace{-6pt}}
+
+    \resumeItemListStart
+      \resumeItem{Ansible, Terraform, KVM, Kubernetes, Jenkins, SonarQube, Prometheus, Grafana, PostgreSQL}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+  {\href{https://github.com/klephron/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}}}{Февраль 2024 - Июнь 2024}
 
     {\vspace{-10pt}\small Система отслеживания состояния дорожного покрытия при помощи мобильных устройств водителей.\vspace{-7pt}}
 
   \resumeItemListStart
-    \resumeItem{Обеспечил горизонтальное масштабирование за счет продуманной архитектуры и выбора оптимальных технологий.}
-    \resumeItem{Увеличил пропускную способность системы, оптимизировав узкие места, выявленные реализованным нагрузочным тестированием.}
-    \resumeItem{Повысил точность предсказаний, внедрив сервисы для тестирования и сбора необработанных данных с датчиков.}
+    \resumeItem{Docker, Kafka, ClickHouse, MQTT, Go, Python}
   \resumeItemListEnd
-
 \resumeSubHeadingListEnd
 \end{document}

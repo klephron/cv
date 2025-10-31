@@ -74,7 +74,7 @@ Specialist with deep knowledge of GNU/Linux and practical experience in infrastr
   \small{\item{
     \textbf{Stack}{: Linux, Ansible, Terraform, Docker Swarm, Kubernetes, Prometheus, Grafana, ELK, GitHub/GitLab CI/CD, Jenkins, Kafka, RabbitMQ, PostgreSQL, MongoDB, Redis, Nginx, Wireguard, KVM, Make, CMake }
 
-   \textbf{Languages}{: C/C++, Java (Spring Cloud, Micronaut), Python, JS/TS, Golang, Bash, SQL, Rust, Protobuf }
+   \textbf{Languages}{: Python, Go, Bash, SQL, C/C++, Java (Spring Cloud, Micronaut), JS/TS, Rust, Protobuf }
 
    \textbf{Foreign languages}{: Russian - Native, English - B2}%
   }}
@@ -84,25 +84,15 @@ Specialist with deep knowledge of GNU/Linux and practical experience in infrastr
 \section{Experience}
 \resumeSubHeadingListStart
   \resumeExperienceHeading
-    {\textbf{ITMO Events} $|$ \footnotesize\emph{Frontend Team Lead/Developer, DevOps} $|$ practice}{February 2024 - June 2024}
+    {\textbf{Bluster Wind}}{September 2023 - February 2024}
 
-    {\vspace{-10pt}\small Event and Venue Management System.\vspace{-7pt}}
-
-  \resumeItemListStart
-    \resumeItem{Standardized the API synchronization process and developed an adapter for application interaction, reducing risks related to backward compatibility.}
-    \resumeItem{Configured static code analyzers and merge checks using GitHub Actions for pull requests.}
-    \resumeItem{Deployed a system for client demonstrations while resolving multiple conflicts.}
-  \resumeItemListEnd
-
-  \resumeExperienceHeading
-    {{\underline{\textbf{Bluster Wind}}} $|$ \footnotesize\emph{DevOps, Backend Developer} $|$ startup, team of 12 members}{September 2023 - February 2024}
-
-    {\vspace{-10pt}\small A social network for conducting surveys, creating user profiles based on their votes, and visualizing results on charts according to specified parameters.\vspace{-7pt}}
+    {\vspace{-10pt}\small Development of a social network for conducting surveys and visualizing results.\vspace{-7pt}}
 
   \resumeItemListStart
-    \resumeItem{Configured the development server, TLS, Nginx, Liquibase, Keycloak, Container Registry, and self-hosted DinD runners.}
-    \resumeItem{Implemented pipelines for testing, container storage, and server application deployment.}
-    \resumeItem{Developed a user and subscription management module for a monolithic Java Spring application.}
+    \resumeItem{Containerized backend and auxiliary applications using Docker, set up image storage in a private Docker Registry.}
+    \resumeItem{Implemented CI/CD pipelines in GitHub Actions with self-hosted runners for automated testing, building, releasing, and deployment.}
+    \resumeItem{Configured a TLS reverse proxy based on Nginx for secure service access.}
+    \resumeItem{Automated infrastructure deployment using Ansible and Terraform.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -110,24 +100,30 @@ Specialist with deep knowledge of GNU/Linux and practical experience in infrastr
 \section{Projects}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-    {\href{https://github.com/klephron/natrix}{\underline{\textbf{Natrix Language}}} $|$ \footnotesize\emph{C, Make, Antlr3, Python, Docker}}{October 2024 - April 2025}
+    {\href{https://github.com/klephron/heatbill}{\underline{\textbf{HeatBill}}}}{March 2025 - May 2025}
 
-    {\vspace{-10pt}\small A compiled, dynamic, strongly typed general purpose language. \vspace{-6pt}}
+    {\vspace{-10pt}\small A high-load IoT system for phased heat consumption metering in apartment buildings  \vspace{-6pt}}
 
     \resumeItemListStart
-      \resumeItem{Improved code execution speed by 3 times through use of profiling tools.}
-      \resumeItem{Developed a language debugger leveraging deep understanding of Linux process architecture.}
+      \resumeItem{Ansible, Terraform, KVM, Docker Swarm, Jenkins, Nginx, Consul, ELK Stack, RabbitMQ, MongoDB, Redis}
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\href{https://github.com/klephron/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}} $|$ \footnotesize\emph{Flutter, Python, Golang, MQTT, Kafka, ClickHouse}}{February 2024 - June 2024}
+    {\href{https://github.com/klephron/me-storage}{\underline{\textbf{ME Storage}}}}{February 2025 - April 2025}
 
-    {\vspace{-10pt}\small Road surface condition monitoring system using drivers’ mobile devices.\vspace{-7pt}}
+    {\vspace{-10pt}\small A virtual item storage system. \vspace{-6pt}}
 
     \resumeItemListStart
-      \resumeItem{Enabled horizontal scaling through well-designed architecture and technology choices.}
-      \resumeItem{Increased system throughput by optimizing bottlenecks identified during load testing.}
-      \resumeItem{Improved prediction accuracy through the development of services for testing and collecting raw sensor data.}
+      \resumeItem{Ansible, Terraform, KVM, Kubernetes, Jenkins, SonarQube, Prometheus, Grafana, PostgreSQL}
     \resumeItemListEnd
+
+  \resumeProjectHeading
+  {\href{https://github.com/klephron/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}}}{February 2024 - June 2024}
+
+    {\vspace{-10pt}\small A road surface condition monitoring system using drivers’ mobile devices.\vspace{-7pt}}
+
+  \resumeItemListStart
+    \resumeItem{Docker, Kafka, ClickHouse, MQTT, Go, Python}
+  \resumeItemListEnd
 \resumeSubHeadingListEnd
 \end{document}

@@ -1,6 +1,5 @@
  
 /* start css.sty */
-.cmsy-10{font-size:90%;}
 .labx-1095{font-weight: bold;}
 .labx-1095{font-weight: bold;}
 .laxc-2488{font-size:218%; font-variant: small-caps; font-weight: bold;}
@@ -11,13 +10,8 @@
 .fa5brands0-{font-size:90%; font-family: 'Font Awesome 5 Brands Regular', serif;}
 .latt-1095{font-family: monospace,monospace;}
 .lati-1000{font-size:90%;font-style: italic;}
-.lati-1000{font-style: italic;}
 .labx-1000{font-size:90%;font-weight: bold;}
 .labx-1000{font-weight: bold;}
-.larm-0900{font-size:81%;}
-.lati-0900{font-size:81%;font-style: italic;}
-.lati-0900{font-style: italic;}
-.cmsy-9{font-size:81%;}
 p{margin-top:0;margin-bottom:0}
 p.indent{text-indent:0;}
 p + p{margin-top:1em;}

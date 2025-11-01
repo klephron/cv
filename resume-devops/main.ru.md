@@ -39,18 +39,25 @@
 
 Высоконагруженная система IoT для учета потребления тепла в многоквартирных домах.
 
-- Ansible, Terraform, KVM, Docker Swarm, Jenkins, Nginx, Consul, ELK Stack, RabbitMQ, MongoDB, Redis
+- Разработал Ansible-роли и плейбуки для масштабируемого развертывания приложений в Docker Swarm.
+- Реализовал централизованный сбор логов в ELK через Filebeat, метрик в Prometheus, дашборды в Grafana.
+- Настроил шардирование и репликацию MongoDB, Prometheus discovery и Nginx балансировку через Consul.
 
 
 5.2. ME Storage -- https://github.com/klephron/me-storage | Февраль 2025 - Апрель 2025
 
 Система хранения виртуальных предметов.
 
-- Ansible, Terraform, KVM, Kubernetes, Jenkins, SonarQube, Prometheus, Grafana, PostgreSQL
+– Разработал модульную Terraform-конфигурацию для создания виртуальных машин на базе KVM.
+– Настроил Jenkins-пайплайн для сборки, анализа качества кода в SonarQube и деплоя через Ansible.
+– Создал Ansible-роли и плейбуки для конфигурации Ubuntu-серверов, развертывания multi-node кластера kubeadm, настройки RBAC и деплоя приложений.
+– Реализовал автоматизированное развертывание SonarQube, Prometheus, Grafana вне кластера и создал RBAC-политику, позволяющую Prometheus собирать метрики сервисов через Kubernetes API.
 
 
 5.3. Road Condition Monitoring -- https://github.com/klephron/road-condition-monitoring | Февраль 2024 - Июнь 2024
 
 Система отслеживания состояния дорожного покрытия при помощи мобильных устройств водителей.
 
-- Docker, Kafka, ClickHouse, MQTT, Go, Python
+- Настроил CI/CD-пайплайны в GitHub Actions для сборки APK и деплоя серверных Go/Python контейнеров.
+- Реализовал Kafka-centric архитектуру с MQTT Kafka Connector для горизонтального масштабирования.
+- Повысил пропускную способность системы за счет пакетных вставок в ClickHouse.

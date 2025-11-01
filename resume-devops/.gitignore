@@ -16,3 +16,4 @@ build/
 *.xref
 !html/*.css
 !html/*.html
+main*.pdf

@@ -11,6 +11,14 @@ HTML_DIR := $(CURDIR)/html
 
 .DEFAULT_GOAL := build
 
+build:  html/main.ru.html html/main.en.html Кулаков\ Никита\ -\ DevOps.pdf Nikita\ Kulakov\ -\ DevOps.pdf
+
+Кулаков\ Никита\ -\ DevOps.pdf: main.ru.pdf
+	cp "$<" "$@"
+
+Nikita\ Kulakov\ -\ DevOps.pdf: main.en.pdf
+	cp "$<" "$@"
+
 # for russian CV
 # may use proper path to mktextfm
 install/fonts:
@@ -19,8 +27,6 @@ install/fonts:
 	@$(MKTEXTFM) lacc1200
 	@$(MKTEXTFM) lati0900
 	@$(MKTEXTFM) laxc2074
-
-build: main.ru.pdf main.en.pdf html/main.ru.html html/main.en.html
 
 %.pdf: %.tex
 	@$(LATEXMK) -pdf $<

@@ -54,40 +54,43 @@
 
 %-------------------ABOUT ME-------------------%
 \section{О себе}
-{\small Специалист с глубокими знаниями GNU/Linux и практическим опытом автоматизации инфраструктуры. Предпочитает глубокое понимание принципов работы технологий для их точной настройки и эффективного применения. Нацелен на развитие в области DevOps через проектирование и поддержку устойчивой и эффективной инфраструктуры.}
+\resumeHeadingListStart
+  \resumeHeadingAbout
+  {Специалист с глубокими знаниями GNU/Linux и практическим опытом автоматизации инфраструктуры. Предпочитает глубокое понимание принципов работы технологий для их точной настройки и эффективного применения. Нацелен на развитие в области DevOps через проектирование и поддержку устойчивой и эффективной инфраструктуры.}
+\resumeHeadingListEnd
 
 %-------------------EDUCATION-------------------%
 \section{Образование}
-\resumeSubHeadingListStart
-  \resumeSubheading
+\resumeHeadingListStart
+  \resumeHeadingEducation
     {ИТМО}{Санкт-Петербург, 2026}
     {Магистратура, Системное и прикладное программное обеспечение}{5.00/5.00}
-
-  \resumeSubheading
+  \resumeHeadingEducation
     {ИТМО}{Санкт-Петербург, 2024}
     {Бакалавриат, Информатика и вычислительная техника - Распределенные системы и сети}{4.92/5.00}
-
-\resumeSubHeadingListEnd
+\resumeHeadingListEnd
 
 %-------------------SKILLS-------------------%
 \section{Навыки}
-\resumeSubHeadingListStart
-  \small{\item{
-    \textbf{Стек}{: Linux, Ansible, Terraform, Docker Swarm, Kubernetes, Prometheus, Grafana, ELK, GitHub/GitLab CI/CD, Jenkins, Kafka, RabbitMQ, PostgreSQL, MongoDB, Redis, Nginx, Wireguard, KVM, Make, CMake }
+\resumeHeadingListStart
+  \resumeHeadingSkills
+  {Стек}{Linux, Ansible, Terraform, Docker Swarm, Kubernetes, Prometheus, Grafana, ELK, GitHub/GitLab CI/CD, Jenkins, Kafka, RabbitMQ, PostgreSQL, MongoDB, Redis, Nginx, Wireguard, KVM, Make, CMake}
 
-   \textbf{Языки}{: Python, Go, Bash, SQL, C/C++, Java (Spring Cloud, Micronaut), JS/TS, Rust, Protobuf }
+  \resumeHeadingSkills
+   {Языки}{Python, Go, Bash, SQL, C/C++, Java (Spring Cloud, Micronaut), JS/TS, Rust, Protobuf}
 
-   \textbf{Иностранные языки}{: Английский - B2}%
-  }}
-\resumeSubHeadingListEnd
+  \resumeHeadingSkills
+  {Иностранные языки}{Английский - B2}
+\resumeHeadingListEnd
 
 %-------------------EXPERIENCE-------------------%
 \section{Опыт}
-\resumeSubHeadingListStart
-  \resumeExperienceHeading
-    {\textbf{Bluster Wind}}{Сентябрь 2023 - Февраль 2024}
+\resumeHeadingListStart
+  \resumeHeadingExperience
+  {Bluster Wind}{Сентябрь 2023 - Февраль 2024}
 
-    {\vspace{-10pt}\small Разработка социальной сети для проведения опросов и визуализации результатов.\vspace{-7pt}}
+  \resumeDescription
+  {Разработка социальной сети для проведения опросов и визуализации результатов.}
 
   \resumeItemListStart
     \resumeItem{Контейнеризировал серверные и вспомогательные приложения с использованием Docker, организовал хранение образов в частном Docker Registry.}
@@ -95,43 +98,46 @@
     \resumeItem{Настроил TLS reverse-proxy на базе Nginx для безопасного доступа к сервисам.}
     \resumeItem{Автоматизировал развертывание инфраструктуры с использованием Ansible и Terraform.}
   \resumeItemListEnd
-\resumeSubHeadingListEnd
+\resumeHeadingListEnd
 
 %-------------------PROJECTS-------------------%
 \section{Проекты}
-\resumeSubHeadingListStart
-  \resumeProjectHeading
-    {\href{https://github.com/klephron/heatbill}{\underline{\textbf{HeatBill}}}}{Март 2025 - Май 2025}
+\resumeHeadingListStart
+  \resumeHeadingProject
+  {\href{https://github.com/klephron/heatbill}{\underline{HeatBill}}}{Март 2025 - Май 2025}
 
-    {\vspace{-10pt}\small Высоконагруженная система IoT для учета потребления тепла в многоквартирных домах. \vspace{-6pt}}
+  \resumeDescription
+  {Высоконагруженная система IoT для учета потребления тепла в многоквартирных домах.}
 
-    \resumeItemListStart
-      \resumeItem{Разработал Ansible-роли и плейбуки для масштабируемого развертывания приложений в Docker Swarm.}
-      \resumeItem{Реализовал централизованный сбор логов в ELK через Filebeat, метрик в Prometheus, дашборды в Grafana.}
-      \resumeItem{Настроил шардирование и репликацию MongoDB, Prometheus discovery и Nginx балансировку через Consul.}
-    \resumeItemListEnd
+  \resumeItemListStart
+    \resumeItem{Разработал Ansible-роли и плейбуки для масштабируемого развертывания приложений в Docker Swarm.}
+    \resumeItem{Реализовал централизованный сбор логов в ELK через Filebeat, метрик в Prometheus, дашборды в Grafana.}
+    \resumeItem{Настроил шардирование и репликацию MongoDB, Prometheus discovery и Nginx балансировку через Consul.}
+  \resumeItemListEnd
 
-  \resumeProjectHeading
-    {\href{https://github.com/klephron/me-storage}{\underline{\textbf{ME Storage}}}}{Февраль 2025 - Апрель 2025}
+  \resumeHeadingProject
+  {\href{https://github.com/klephron/me-storage}{\underline{ME Storage}}}{Февраль 2025 - Апрель 2025}
 
-    {\vspace{-10pt}\small Система хранения виртуальных предметов. \vspace{-6pt}}
+  \resumeDescription
+  {Система хранения виртуальных предметов.}
 
-    \resumeItemListStart
-      \resumeItem{Разработал модульную Terraform-конфигурацию для создания виртуальных машин на базе KVM.}
-      \resumeItem{Настроил Jenkins-пайплайн для сборки, анализа качества кода в SonarQube и деплоя через Ansible.}
-      \resumeItem{Создал Ansible-роли и плейбуки для конфигурации Ubuntu-серверов, развертывания multi-node кластера kubeadm, настройки RBAC и деплоя приложений.}
-      \resumeItem{Реализовал автоматизированное развертывание SonarQube, Prometheus, Grafana вне кластера и создал RBAC-политику, позволяющую Prometheus собирать метрики сервисов через Kubernetes API.}
-    \resumeItemListEnd
+  \resumeItemListStart
+    \resumeItem{Разработал модульную Terraform-конфигурацию для создания виртуальных машин на базе KVM.}
+    \resumeItem{Настроил Jenkins-пайплайн для сборки, анализа качества кода в SonarQube и деплоя через Ansible.}
+    \resumeItem{Создал Ansible-роли и плейбуки для конфигурации Ubuntu-серверов, развертывания multi-node кластера kubeadm, настройки RBAC и деплоя приложений.}
+    \resumeItem{Реализовал автоматизированное развертывание SonarQube, Prometheus, Grafana вне кластера и создал RBAC-политику, позволяющую Prometheus собирать метрики сервисов через Kubernetes API.}
+  \resumeItemListEnd
 
-  \resumeProjectHeading
-  {\href{https://github.com/klephron/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}}}{Февраль 2024 - Июнь 2024}
+  \resumeHeadingProject
+  {\href{https://github.com/klephron/road-condition-monitoring}{\underline{Road Condition Monitoring}}}{Февраль 2024 - Июнь 2024}
 
-    {\vspace{-10pt}\small Система отслеживания состояния дорожного покрытия при помощи мобильных устройств водителей.\vspace{-7pt}}
+  \resumeDescription
+  {Система отслеживания состояния дорожного покрытия при помощи мобильных устройств водителей.}
 
   \resumeItemListStart
     \resumeItem{Настроил CI/CD-пайплайны в GitHub Actions для сборки APK и деплоя серверных Go/Python контейнеров.}
     \resumeItem{Реализовал Kafka-centric архитектуру с MQTT Kafka Connector для горизонтального масштабирования.}
     \resumeItem{Повысил пропускную способность системы за счет пакетных вставок в ClickHouse.}
   \resumeItemListEnd
-\resumeSubHeadingListEnd
+\resumeHeadingListEnd
 \end{document}

@@ -51,49 +51,57 @@
   \vspace{-8pt}\scshape\raggedright\large
 }{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
 
-% Ensure that generate PDF is machine readable/ATS parsable
-\pdfgentounicode=1
-%-------------------COMMANDS-------------------%
 \urlstyle{same}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubheading}[4]{
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+%-------------------COMMANDS-------------------%
+
+\newcommand{\resumeHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeHeadingAbout}[1]{
+  \item{\small#1}
+}
+
+\newcommand{\resumeHeadingEducation}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
-\newcommand{\resumeSubSubheading}[2]{
+\newcommand{\resumeHeadingSkills}[2]{
+  \item
+    \textbf{\small#1}{\small: #2}
+    \vspace{-6pt}
+}
+
+\newcommand{\resumeHeadingExperience}[2]{
     \item
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textbf{\small#1} & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
+\newcommand{\resumeHeadingProject}[2]{
     \item
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \textbf{\small#1} & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeExperienceHeading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+\newcommand{\resumeDescription}[1]{
+  \vspace{-9pt}{\small #1}\vspace{-7pt}
 }
 
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1.4pt}}
+  }
+}

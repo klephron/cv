@@ -10,33 +10,41 @@
 \begin{table}[h]
   \noindent{%
     \begin{minipage}[t]{0.86\textwidth}
-      \vspace{1pt}
-      \begin{center}
-        \textbf{\Huge\scshape Kulakov Nikita Vasilyevich}
-      \end{center}
-      \vspace{-6pt}
+      {
+        \vspace{1pt}
+        \begin{center}
+          \textbf{\Huge\scshape Kulakov Nikita Vasilyevich}
+        \end{center}
+        \vspace{-6pt}
+      }
 
-      Date of birth: 05.06.2003
+      {\small
+        Date of birth: 05.06.2003
+        \vspace{2pt}
+      }
       \vspace{2pt}
 
-      Saint Petersburg, Russia%
-      \small
-      \hspace{5pt}
-      \faIcon{phone} %
-      \href{tel:79243306869}{\underline{+7 924 330 6869}}%
-      \vspace{6pt}
+      {\small
+        Saint Petersburg, Russia
+        \hspace{5pt}
+        \faIcon{phone}
+        \href{tel:79243306869}{\underline{+7 924 330 6869}}
+        \vspace{2pt}
+      }
 
-      \faIcon{telegram} %
-      \href{https://t.me/klephron}{\underline{t.me/klephron}}%
-      \hspace{10pt}%
-      \faIcon{envelope} %
-      \href{mailto:klephron@gmail.com}{\underline{klephron@gmail.com}}%
-      \hspace{10pt}%
-      \faIcon{linkedin} %
-      \href{https://www.linkedin.com/in/klephron/}{\underline{linkedin.com/klephron}}%
-      \hspace{10pt}%
-      \faIcon{github} %
-      \href{https://github.com/klephron}{\underline{github.com/klephron}}%
+      {\small
+        \faIcon{telegram}
+        \href{https://t.me/klephron}{\underline{t.me/klephron}}%
+        \hspace{10pt}%
+        \faIcon{envelope}
+        \href{mailto:klephron@gmail.com}{\underline{klephron@gmail.com}}%
+        \hspace{10pt}%
+        \faIcon{linkedin}
+        \href{https://www.linkedin.com/in/klephron/}{\underline{linkedin.com/klephron}}%
+        \hspace{10pt}%
+        \faIcon{github}
+        \href{https://github.com/klephron}{\underline{github.com/klephron}}%
+      }
     \end{minipage}%
   }%
   \hfill%
@@ -54,39 +62,43 @@
 
 %-------------------ABOUT ME-------------------%
 \section{About}
-{\small Specialist with deep knowledge of GNU/Linux and practical experience in infrastructure automation. Prefers a thorough understanding of technological principles for precise configuration and effective application. Focused on advancing in DevOps through the design and maintenance of resilient and efficient infrastructure.}
+\resumeHeadingListStart
+  \resumeHeadingAbout
+  {Specialist with deep knowledge of GNU/Linux and practical experience in infrastructure automation. Prefers a thorough understanding of technological principles for precise configuration and effective application. Focused on advancing in DevOps through the design and maintenance of resilient and efficient infrastructure.}
+\resumeHeadingListEnd
 
 %-------------------EDUCATION-------------------%
 \section{Education}
-\resumeSubHeadingListStart
-  \resumeSubheading
+\resumeHeadingListStart
+  \resumeHeadingEducation
     {ITMO}{Saint Petersburg, 2026}
     {Master’s Degree in System and Application Software}{5.00/5.00}
-
-  \resumeSubheading
+  \resumeHeadingEducation
     {ITMO}{Saint Petersburg, 2024}
     {Bachelor’s Degree in Computer Science and Engineering - Distributed systems and computing}{4.92/5.00}
-\resumeSubHeadingListEnd
+\resumeHeadingListEnd
 
 %-------------------SKILLS-------------------%
 \section{Skills}
-\resumeSubHeadingListStart
-  \small{\item{
-    \textbf{Stack}{: Linux, Ansible, Terraform, Docker Swarm, Kubernetes, Prometheus, Grafana, ELK, GitHub/GitLab CI/CD, Jenkins, Kafka, RabbitMQ, PostgreSQL, MongoDB, Redis, Nginx, Wireguard, KVM, Make, CMake }
+\resumeHeadingListStart
+  \resumeHeadingSkills
+  {Stack}{Linux, Ansible, Terraform, Docker Swarm, Kubernetes, Prometheus, Grafana, ELK, GitHub/GitLab CI/CD, Jenkins, Kafka, RabbitMQ, PostgreSQL, MongoDB, Redis, Nginx, Wireguard, KVM, Make, CMake}
 
-   \textbf{Languages}{: Python, Go, Bash, SQL, C/C++, Java (Spring Cloud, Micronaut), JS/TS, Rust, Protobuf }
+  \resumeHeadingSkills
+  {Languages}{Python, Go, Bash, SQL, C/C++, Java (Spring Cloud, Micronaut), JS/TS, Rust, Protobuf}
 
-   \textbf{Foreign languages}{: Russian - Native, English - B2}%
-  }}
-\resumeSubHeadingListEnd
+  \resumeHeadingSkills
+  {Foreign languages}{Russian - Native, English - B2}%
+\resumeHeadingListEnd
 
 %-------------------EXPERIENCE-------------------%
 \section{Experience}
-\resumeSubHeadingListStart
-  \resumeExperienceHeading
-    {\textbf{Bluster Wind}}{September 2023 - February 2024}
+\resumeHeadingListStart
+  \resumeHeadingExperience
+  {Bluster Wind}{September 2023 - February 2024}
 
-    {\vspace{-10pt}\small Development of a social network for conducting surveys and visualizing results.\vspace{-7pt}}
+  \resumeDescription
+  {Development of a social network for conducting surveys and visualizing results.}
 
   \resumeItemListStart
     \resumeItem{Containerized backend and auxiliary applications using Docker, set up image storage in a private Docker Registry.}
@@ -94,43 +106,46 @@
     \resumeItem{Configured a TLS reverse proxy based on Nginx for secure service access.}
     \resumeItem{Automated infrastructure deployment using Ansible and Terraform.}
   \resumeItemListEnd
-\resumeSubHeadingListEnd
+\resumeHeadingListEnd
 
 %-------------------PROJECTS-------------------%
 \section{Projects}
-\resumeSubHeadingListStart
-  \resumeProjectHeading
-    {\href{https://github.com/klephron/heatbill}{\underline{\textbf{HeatBill}}}}{March 2025 - May 2025}
+\resumeHeadingListStart
+  \resumeHeadingProject
+  {\href{https://github.com/klephron/heatbill}{\underline{HeatBill}}}{March 2025 - May 2025}
 
-    {\vspace{-10pt}\small A high-load IoT system for phased heat consumption metering in apartment buildings  \vspace{-6pt}}
+  \resumeDescription
+  {A high-load IoT system for phased heat consumption metering in apartment buildings.}
 
-    \resumeItemListStart
-      \resumeItem{Developed Ansible roles and playbooks for scalable Docker Swarm application deployment.}
-      \resumeItem{Implemented centralized log collection to ELK via Filebeat, metrics to Prometheus, dashboards in Grafana.}
-      \resumeItem{Configured MongoDB sharding and replication, Prometheus discovery, and Nginx load balancing via Consul.}
-    \resumeItemListEnd
+  \resumeItemListStart
+    \resumeItem{Developed Ansible roles and playbooks for scalable Docker Swarm application deployment.}
+    \resumeItem{Implemented centralized log collection to ELK via Filebeat, metrics to Prometheus, dashboards in Grafana.}
+    \resumeItem{Configured MongoDB sharding and replication, Prometheus discovery, and Nginx load balancing via Consul.}
+  \resumeItemListEnd
 
-  \resumeProjectHeading
-    {\href{https://github.com/klephron/me-storage}{\underline{\textbf{ME Storage}}}}{February 2025 - April 2025}
+  \resumeHeadingProject
+  {\href{https://github.com/klephron/me-storage}{\underline{ME Storage}}}{February 2025 - April 2025}
 
-    {\vspace{-10pt}\small A virtual item storage system. \vspace{-6pt}}
+  \resumeDescription
+  {A virtual item storage system.}
 
-    \resumeItemListStart
-      \resumeItem{Developed modular Terraform configuration for KVM-based virtual machine provisioning.}
-      \resumeItem{Configured Jenkins pipeline for build, SonarQube code quality analysis, and Ansible deployment.}
-      \resumeItem{Created Ansible roles and playbooks for Ubuntu server configuration, multi-node kubeadm cluster deployment, RBAC setup, and application deployment.}
-      \resumeItem{Implemented automated deployment of SonarQube, Prometheus, Grafana outside the cluster and created RBAC policy allowing Prometheus to collect service metrics via Kubernetes API.}
-    \resumeItemListEnd
+  \resumeItemListStart
+    \resumeItem{Developed modular Terraform configuration for KVM-based virtual machine provisioning.}
+    \resumeItem{Configured Jenkins pipeline for build, SonarQube code quality analysis, and Ansible deployment.}
+    \resumeItem{Created Ansible roles and playbooks for Ubuntu server configuration, multi-node kubeadm cluster deployment, RBAC setup, and application deployment.}
+    \resumeItem{Implemented automated deployment of SonarQube, Prometheus, Grafana outside the cluster and created RBAC policy allowing Prometheus to collect service metrics via Kubernetes API.}
+  \resumeItemListEnd
 
-  \resumeProjectHeading
-  {\href{https://github.com/klephron/road-condition-monitoring}{\underline{\textbf{Road Condition Monitoring}}}}{February 2024 - June 2024}
+  \resumeHeadingProject
+  {\href{https://github.com/klephron/road-condition-monitoring}{\underline{Road Condition Monitoring}}}{February 2024 - June 2024}
 
-    {\vspace{-10pt}\small A road surface condition monitoring system using drivers’ mobile devices.\vspace{-7pt}}
+  \resumeDescription
+  {A road surface condition monitoring system using drivers’ mobile devices.}
 
   \resumeItemListStart
     \resumeItem{Configured CI/CD pipelines in GitHub Actions for APK builds and Go/Python server container deployment.}
     \resumeItem{Implemented Kafka-centric architecture with MQTT Kafka Connector for horizontal scaling.}
     \resumeItem{Increased system throughput through batch inserts to ClickHouse.}
   \resumeItemListEnd
-\resumeSubHeadingListEnd
+\resumeHeadingListEnd
 \end{document}
